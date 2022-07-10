@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon_io/favicon-32x32.png">
+    <title>The Watoto Library</title>
+<style>
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration:none;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+    <div class="slideshow">
+        <div class="slideshow-item">
+            <img src="media/boy-studying-reduced.jpeg">
+            <div class="slideshow-item-text">
+                <h5>Hello</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum quaerat quis nostrum deserunt ipsam odio voluptas atque incidunt temporibus, ad iste non quas porro magni quidem quasi perspiciatis numquam.</p>
+            </div>
+        </div>
+        <div class="slideshow-item">
+            <img src="media/girl-studying-reduced.jpeg">
+            <div class="slideshow-item-text">
+                <h5>Test</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum quaerat quis nostrum deserunt ipsam odio voluptas atque incidunt temporibus, ad iste non quas porro magni quidem quasi perspiciatis numquam.</p>
+            </div>
+        </div>
+        <div class="slideshow-item">
+            <img src="media/happy-boy-reduced.jpeg">
+            <div class="slideshow-item-text">
+                <h5>Next</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum quaerat quis nostrum deserunt ipsam odio voluptas atque incidunt temporibus, ad iste non quas porro magni quidem quasi perspiciatis numquam.</p>
+            </div>
+        </div>
+      </div>
+    
+      <div class="navbar-kenya bg-kenya" id="navbar">
+        <a href="index.html">HOME</a>
+        <a href="whatWeDo.html#navbar">WHAT WE DO</a>
+        <a href="vision.html#navbar">OUR VISION</a>
+        <a href="getInTouch.html#navbar" class="active">GET IN TOUCH</a>
+        <a href="donate.html#navbar" class="right">DONATE</a>
+      </div>
+    
+    <div class="row">
+      <div class="side">
+        <h2>About Us</h2>
+        <div class="logo">
+        <img src="media/logo-transparent.png" class="img" style="width: 60%;">
+        </div>
+        
+        <p>Some text about me in culpa qui officia deserunt mollit anim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis excepturi, esse consequuntur quisquam harum rem? Quia, in? Blanditiis ratione id laboriosam at corporis iste necessitatibus molestias eaque neque dolorem.</p>
+        <br>
+        <h3>Watoto and Chess</h3>
+        <img src="media/boys-playing-chess.png" class="img">
+        <p>We play chess!</p>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div>
+      </div>
+
+      <div class="main">
+        <h2>Our Team</h2>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="media/team/brandon-reduced.jpeg" alt="Brandon" style="width:100%">
+                <div class="container">
+                  <h2>Brandon Francis Okoth</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>okothbrandon@gmail.com</p>
+                  <p><a class="button" href="mailto:okothbrandon@gmail.com">Contact</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                  <img src="#" alt="Sandra" style="width:100%">
+                  <div class="container">
+                    <h2>Sandra Kanstad</h2>
+                    <p class="title">Cofounder and Owner</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="media/team/magnus.jpg" alt="Magnus" style="width:100%">
+                <div class="container">
+                  <h2>Magnus Moe Heide</h2>
+                  <p class="title">CTO</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>magnusmoe01@gmail.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+    
+
+  
+
+    </body>
+</html>
