@@ -14,29 +14,91 @@
       font-size: 16px;
   }
 
-  .navbar-kenya {
-    width: 100em;
-    height: 4em;
-    padding: 0.5em 1em;
+  .btn {
+    padding: 20px;
+    padding-left: 0;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+  }
+
+  .button-design {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .readmore:hover {
+    font-weight: bold;
+  }
+
+
+
+/* ---------------------- */
+
+  .navbar-1 {
+    background-color: #1ba0f2;
+    padding: 7px;
+    width: 100%;
+  }
+
+
+
+  .navbar-1 a {
+    float: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%;
+    /* Four links of equal widths */
+    text-align: center;
+}
+
+.navbar-1 a:hover {
+    font-weight: bold;
+}
+
+.navbar-1 a.active {
+    font-weight: bold;
+}
+
+
+
+  /* -------------------------------------------------  */
+
+/*
+
+  .navbar {
+    background-color: #1ba0f2;
+    width: 100%;
+    padding: 20px;
     display: table-cell;
     vertical-align: middle;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
     overflow: hidden;
     /* position: sticky;
-    position: -webkit-sticky; */
+    position: -webkit-sticky; 
     top: 0;
-  }
+    float:center;
+  } 
 
-  .bg-kenya {
-    color: #fff;
-    background: -webkit-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, #BC0000 66%, #036601 66%);
-    background: -o-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -o-linear-gradient(110deg, #BC0000 66%, #036601 66%);
-    background: -moz-linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), -moz-linear-gradient(110deg, #BC0000 66%, #036601 66%);
-    background: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #BC0000 66%, #036601 66%);
-}
   
-  .navbar-kenya a {
+  .navbar a {
     float: left;
     display: block;
     color: white;
@@ -45,33 +107,86 @@
     text-decoration: none;
   }
   
-  
-  /* Right-aligned link */
-  .navbar-kenya a.right {
+  .navbar a.right {
     float: right;
   }
   
-  /* Change color on hover */
   .navbar a:hover {
     font-weight: bold;
   }  
   
-  .navbar-kenya a:hover {
+  .navbar a:hover {
     font-weight: bold;
   }
   
-  /* Active/current link */
-  .navbar-kenya a.active {
+  .navbar a.active {
     font-weight: bold;
     font-size: 1.1em;
+  } */
+
+  .navbar-2 #myLinks {
+    display: none;
   }
   
-  /* Column container */
+  .navbar-2 {
+    overflow: hidden;
+    background-color: #1ba0f2;
+    position: relative;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+    
+  @media(min-width: 900px) {
+
+    .navbar-2 {
+        display: none;
+    }
+
+    .navbar-1 {
+      display: flex;
+  }
+
+  } 
+  
+  @media(max-width: 899px) {
+    .navbar-1 {
+      display: none;
+  }
+
+}
+
+  .box-1-navbar-2 {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .box-A1, .box-A2, .box-A3, .box-A4, .box-A5 {
+    text-align: center;
+    color: white;
+    flex: 1;
+    padding: 15px;
+}
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+ /* @media screen and (max-width: 400px) {
+    .navbar-1 a {
+      float: none;
+      width: 100%;
+    }
+  } 
+
+
+/* ------------------------------------------- */
+
+  
   .row {  
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   
   /* Create two unequal columns that sits next to each other */
@@ -142,6 +257,7 @@
       color: #fff;
       margin: 0px;
       padding: 15px;
+      padding-left: 25px;
   }
 
   .slideshow-item-text h5 {
@@ -149,6 +265,7 @@
       text-transform: uppercase;
       letter-spacing: 3px;
       margin-bottom: 2.5rem;
+      color: #1ba0f2;
   }
 
   .slideshow-item-text p {
@@ -206,22 +323,61 @@
       }
   }
 
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .main {
+      flex: 1;
+      order: 1;
+    }
+    
+    .side {
+      flex: 1;
+      order: 2;
+    }
+  }  
+
+  @media screen and (max-width: 1100px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+    
+    .main {
+      flex: 55%;
+    }
+
+    .side {
+      flex: 45%;
+    }
+  }
   
   /* Main column */
   .main {   
     flex: 70%;
-    padding: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.163);
   }
 
   .article {
     background-color: white;
     padding: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
-  }
-
-  div.article {
+  }  
+  
+  .article-click {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     cursor: pointer;
-}
+  }
   
   /* Fake image, just for this example */
   .fakeimg {
@@ -247,12 +403,34 @@
       flex-direction: column;
     }
   }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  a {
+    text-decoration:none;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.fa-remove {
+  color: white;
+}
+
+
+
+
 
