@@ -75,14 +75,35 @@
     <div class="footer">
       <table>
         <tr>
-          <td style="text-align: right; width: 37;"><img src="media/logo-transparent.png" style="height: 100px;"></td>
+          <td style="text-align: right; width: 37;">x</td>
           <td style="text-align: center; width: 20%;"><h3>is run in collaboration with</h3></td>
-          <td style="text-align: left; width: 43%;"><img src="media/soulKids/soulKids-logo.png" style="height: 80px;"></td>
+          <td style="text-align: left; width: 43%;">y</td>
         </tr>
       </table>
     </div>
     
+    <script>
+      function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+              x.style.display = "none";
+          } else {
+              x.style.display = "block";
+          }
 
+          var a = document.getElementById("activate-menu");
+          var d = document.getElementById("deactivate-menu");
+          if (a.style.display === "block") {
+              a.style.display = "none";
+              d.style.display = "block";
+          } else {
+              d.style.display = "none";
+              a.style.display = "block";
+          }
+
+      }
+
+  </script>
   
 
     </body>
