@@ -46,144 +46,65 @@
   }
 
 
+/* ------------------------------------------- */
 
-/* ---------------------- */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  
+  list-style: none;
+  margin: 0; 
+  background: #1ba0f2;
+}
 
-  .navbar-1 {
-    background-color: #1ba0f2;
-    padding: 7px;
-    width: 100%;
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #1565C0;
+}
+
+.active {
+  font-weight: bold;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
   }
+}
 
-
-
-  .navbar-1 a {
-    float: center;
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
     padding: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    width: 20%;
-    /* Four links of equal widths */
-    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
 }
-
-.navbar-1 a:hover {
-    font-weight: bold;
-}
-
-.navbar-1 a.active {
-    font-weight: bold;
-}
-
-
-
-  /* -------------------------------------------------  */
-
-/*
-
-  .navbar {
-    background-color: #1ba0f2;
-    width: 100%;
-    padding: 20px;
-    display: table-cell;
-    vertical-align: middle;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-    overflow: hidden;
-    /* position: sticky;
-    position: -webkit-sticky; 
-    top: 0;
-    float:center;
-  } 
-
-  
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 26px;
-    text-decoration: none;
-  }
-  
-  .navbar a.right {
-    float: right;
-  }
-  
-  .navbar a:hover {
-    font-weight: bold;
-  }  
-  
-  .navbar a:hover {
-    font-weight: bold;
-  }
-  
-  .navbar a.active {
-    font-weight: bold;
-    font-size: 1.1em;
-  } */
-
-  .navbar-2 #myLinks {
-    display: none;
-  }
-  
-  .navbar-2 {
-    overflow: hidden;
-    background-color: #1ba0f2;
-    position: relative;
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-    
-  @media(min-width: 900px) {
-
-    .navbar-2 {
-        display: none;
-    }
-
-    .navbar-1 {
-      display: flex;
-  }
-
-  } 
-  
-  @media(max-width: 899px) {
-    .navbar-1 {
-      display: none;
-  }
-
-}
-
-  .box-1-navbar-2 {
-    text-align: center;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-  }
-
-  .box-A1, .box-A2, .box-A3, .box-A4, .box-A5 {
-    text-align: center;
-    color: white;
-    flex: 1;
-    padding: 15px;
-}
-
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
- /* @media screen and (max-width: 400px) {
-    .navbar-1 a {
-      float: none;
-      width: 100%;
-    }
-  } 
 
 
 /* ------------------------------------------- */
-
   
+
+  .row2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
   .row {  
     display: flex;
     flex-wrap: nowrap;
@@ -378,6 +299,16 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }  
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
   
   /* Fake image, just for this example */
   .fakeimg {
@@ -391,6 +322,10 @@
     padding: 20px;
     text-align: center;
     background: #ddd;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
   }
 
   .footer table {
@@ -402,10 +337,6 @@
     .row {   
       flex-direction: column;
     }
-  }
-
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
   .container {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="media/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="media/logo/favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>What We Do</title>
 </head>
@@ -35,26 +35,18 @@
         </div>
       </div>
     
-      <nav class="navbar-2" id="nav" onclick="myFunction()">
-        <a href="index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a>
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
-            <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
-        </a>
-    </nav>
-    
-    <nav class="navbar-1" id="myLinks">
-      <div class="box-A1"><a href="index.html#nav" class="active">HOME</a></div>
-      <div class="box-A2"><a href="whatWeDo.html#nav">WHAT WE DO</a></div>
-      <div class="box-A3"><a href="vision.html#nav">OUR VISION</a></div>
-      <div class="box-A4"><a href="getInTouch.html#nav">GET IN TOUCH</a></div>
-      <div class="box-A5"><a href="donate.html#nav">DONATE</a></div>
-    </nav>
+    <ul class="navigation" id="nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="whatWeDo.html#nav" class="active">WHAT WE DO</a></li>
+      <li><a href="vision.html#nav">OUR VISION</a></li>
+      <li><a href="getInTouch.html#nav">GET IN TOUCH</a></li>
+      <li><a href="donate.html#nav">DONATE</a></li>
+    </ul>
     
     <div class="row">
       <div class="side" id="side">
         <div class="logo">
-        <img src="media/logo-transparent.png" class="img" style="width: 60%;">
+          <img src="media/logo/logo-transparent.png" class="img" style="width: 60%;">
         </div>
         
         <p>Some text about me in culpa qui officia deserunt mollit anim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corporis excepturi, esse consequuntur quisquam harum rem? Quia, in? Blanditiis ratione id laboriosam at corporis iste necessitatibus molestias eaque neque dolorem.</p>
@@ -82,30 +74,6 @@
         </tr>
       </table>
     </div>
-    
-    <script>
-      function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-              x.style.display = "none";
-          } else {
-              x.style.display = "block";
-          }
-
-          var a = document.getElementById("activate-menu");
-          var d = document.getElementById("deactivate-menu");
-          if (a.style.display === "block") {
-              a.style.display = "none";
-              d.style.display = "block";
-          } else {
-              d.style.display = "none";
-              a.style.display = "block";
-          }
-
-      }
-
-  </script>
-  
 
     </body>
 </html>
