@@ -79,7 +79,7 @@
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 650px) {
   .navigation {
     flex-flow: column wrap;
     padding: 0;
@@ -373,6 +373,29 @@
 }
 
 
+.flex-image-text {
+  display: flex;
+  align-items: center;
+}
+
+.flex-image-text img {
+  max-height: 200px;
+  margin-left: 15px;
+}
+
+@media all and (max-width: 900px) {
+  .flex-image-text {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .flex-image-text img {
+    max-height:none;
+    width: 100%;
+    margin: 0;
+  }
+
+}
 
 
 
