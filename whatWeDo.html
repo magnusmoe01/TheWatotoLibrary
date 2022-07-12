@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/x-icon" href="media/logo/favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type='text/javascript'>
+      $(window).load(function () {
+          $(".se-pre-con").fadeOut("slow");;
+      });
+    </script>
     <title>What We Do</title>
 </head>
 <body>
@@ -59,21 +65,28 @@
       </div>
 
       <div class="main" id="main">
-        <div class="article">
+        <div class="article-click" style="cursor: default;">
           <h2>What We Do</h2>
-        </div>  
+            <p>We do this and that.</p>
+        </div> 
+        <br>
+        <div class="article-click" onclick="location.href='articles/chessClub.html#nav';" id="chessClub">
+            <h3>Chess Club</h3>
+            <img src="media/boys-playing-chess-3-reduced.jpeg" class="img">
+        </div> 
       </div>
     </div>
     
     <div class="footer">
       <table>
         <tr>
-          <td style="text-align: right; width: 37;">x</td>
-          <td style="text-align: center; width: 20%;"><h3>is run in collaboration with</h3></td>
-          <td style="text-align: left; width: 43%;">y</td>
+          <td style="text-align: right; width: 40%;"><img src="media/logo/logo-transparent.png" style="height: 80px;"></td>
+          <td style="text-align: center; width: 20%;"><p style="color: grey">is run in collaboration with</p></td>
+          <td style="text-align: left; width: 40%;"><img src="media/soulKids/soulKids-logo.png" style="height: 70px;"></td>
         </tr>
       </table>
     </div>
 
     </body>
+    <div class="se-pre-con"></div>
 </html>
