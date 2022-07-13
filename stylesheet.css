@@ -441,6 +441,7 @@
 
 .slideshow-inner img {
   max-height: 420px;
+  max-width: 780px;
   border-radius: 4px;
 }
 
