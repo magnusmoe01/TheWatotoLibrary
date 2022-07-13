@@ -448,6 +448,7 @@
 .mySlides {
   display: none;
   max-height: 420px;
+  max-width: 780px;
 }
 
 .prev,
