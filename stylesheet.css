@@ -8,6 +8,7 @@
     margin: 0;
     font-size: 17px;
     background-color: rgba(0,0,0,.1);
+    user-select: none;
   }
 
   html {
@@ -53,7 +54,7 @@
     color: grey;
   }
 
-  .readmore:hover {
+  .readmore {
     font-weight: bold;
   }
 
@@ -419,7 +420,6 @@
 .center {
   display: flex;
   justify-content: center;
-  background-color: yellow;
 
 }
 

@@ -77,7 +77,7 @@
           <div class="flex-container">
             <div class="row2">
               <div class="column">
-                <div class="card" onclick="openPopup()">
+                <div class="card" onclick="changeToBrandon(), openPopup()">
                   <img src="media/team/brandon-reduced.jpeg" alt="Brandon" style="width:100%">
                   <div class="container">
                     <div class="min-height-200">
@@ -98,15 +98,15 @@
                       <p><a class="button-design" href="mailto:sandra@soulkids.nu">Contact</a></p>
                     </div>
                   </div>
-                </div>
+              </div>
             
               <div class="column">
-                <div class="card">
+                <div class="card" onclick="changeToMagnus(), openPopup()">
                   <img src="media/team/magnus.jpg" alt="Magnus" style="width:100%">
                   <div class="container">
                     <h2>Magnus Moe Heide</h2>
                     <p class="title">Cofounder and Director of IT</p>
-                    <p><a class="button-design" href="mailto:magnusmoe01@gmail.com">Contact</a></p>
+                    <p><a class="button-design">Contact info</a></p>
                   </div>
                 </div>
               </div>            
@@ -126,12 +126,15 @@
         <br>
         <div class="article">
           <h2>Contact Us</h2>
-          <p><a href="mailto:okothbrandon@gmail.com">Send an E-mail</a></p>
           <p>Kenya: +254 721 499 429<br>Norway: +47 958 85 852</p>
+          <p><a href="mailto:okothbrandon@gmail.com" class="button-design" style="width: 200px;">Send an E-mail</a></p>
 
           <div class="popup-container" id="popup">
             <img src="media/logo/logo-whitebg-transparent.png" class="popup-img">
-            <img src="media/team/brandon-businessCard.jpeg" class="img">
+
+            <img src="media/team/brandon-businessCard.jpeg" class="img" id="brandonBusinessCard" onclick="changeToBrandon()">
+            <img src="media/team/magnus-businessCard.png" class="img" id="magnusBusinessCard" onclick="changeToMagnus()"/>
+
             <button type="button" onclick="closePopup()">OK</button>
           </div>
 
@@ -150,7 +153,35 @@
     </div>
 
     <script>
-      let popup = document.getElementById("popup");
+      var brandonBusinessCard = document.getElementById("brandonBusinessCard");
+
+      let popup = document.getElementById("popup");    
+    
+    function changeToBrandon() {
+        if (document.getElementById("brandonBusinessCard").src == "media/team/brandon-businessCard.jpeg"){
+            document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.jpeg";
+            magnusBusinessCard.style.display = "none";
+            brandonBusinessCard.style.display = "block";
+        } else {
+            document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.jpeg";
+            magnusBusinessCard.style.display = "none";
+            brandonBusinessCard.style.display = "block";
+        }
+    }
+
+    function changeToMagnus() {
+        if (document.getElementById("magnusBusinessCard").src == "media/team/magnus-businessCard.png"){
+            document.getElementById("magnusBusinessCard").src = "media/team/magnus-businessCard.png";
+            brandonBusinessCard.style.display = "none";
+            magnusBusinessCard.style.display = "block";
+        } else {
+            document.getElementById("magnusBusinessCard").src = "media/team/magnus-businessCard.png";
+            brandonBusinessCard.style.display = "none";
+            magnusBusinessCard.style.display = "block";
+        }
+    }  
+
+    
 
       function openPopup() {
         popup.classList.add("open-popup");
@@ -159,6 +190,7 @@
       function closePopup() {
         popup.classList.remove("open-popup");
       }
+
     </script>
 
     </body>
