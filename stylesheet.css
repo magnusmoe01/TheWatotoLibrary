@@ -15,7 +15,7 @@
       font-size: 16px;
   }
 
-  p, u {
+  p, u, b {
     line-height: 30px;
     font-family: Verdana, Tahoma, sans-serif;
   }
@@ -83,17 +83,19 @@
   font-weight: bold;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   .navigation {
     justify-content: space-around;
   }
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 670px) {
+
   .navigation {
     flex-flow: column wrap;
     padding: 0;
   }
+
   .navigation a { 
     text-align: center; 
     padding: 10px;
@@ -506,4 +508,32 @@
 }
 
 
+/* ------------------------- */
+
+.navbar-2 {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-2 #myLinks {
+  display: none;
+}
+
+.box-1-navbar-2 {
+  text-align: center;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+@media(min-width: 700px) {
+  .navbar-2 {
+      display: none;
+  }
+}
 
