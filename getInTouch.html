@@ -77,15 +77,14 @@
           <div class="flex-container">
             <div class="row2">
               <div class="column">
-                <div class="card">
+                <div class="card" onclick="openPopup()">
                   <img src="media/team/brandon-reduced.jpeg" alt="Brandon" style="width:100%">
                   <div class="container">
                     <div class="min-height-200">
                       <h2>Brandon Francis Okoth</h2>
                       <p class="title">Founder and Executive Director</p>
                     </div>
-                    <p>okothbrandon@gmail.com</p>
-                    <p><a class="button-design" href="mailto:okothbrandon@gmail.com">Contact</a></p>
+                    <p><a class="button-design">Contact info</a></p>
                   </div>
                 </div>
               </div>
@@ -96,7 +95,6 @@
                     <div class="container">
                       <h2>Sandra Kanstad</h2>
                       <p class="title">Cofounder and Owner</p>
-                      <p>sandra@soulkids.nu</p>
                       <p><a class="button-design" href="mailto:sandra@soulkids.nu">Contact</a></p>
                     </div>
                   </div>
@@ -108,7 +106,6 @@
                   <div class="container">
                     <h2>Magnus Moe Heide</h2>
                     <p class="title">Cofounder and Director of IT</p>
-                    <p>magnusmoe01@gmail.com</p>
                     <p><a class="button-design" href="mailto:magnusmoe01@gmail.com">Contact</a></p>
                   </div>
                 </div>
@@ -131,6 +128,13 @@
           <h2>Contact Us</h2>
           <p><a href="mailto:okothbrandon@gmail.com">Send an E-mail</a></p>
           <p>Kenya: +254 721 499 429<br>Norway: +47 958 85 852</p>
+
+          <div class="popup-container" id="popup">
+            <img src="media/logo/logo-whitebg-transparent.png" class="popup-img">
+            <img src="media/team/brandon-businessCard.jpeg" class="img">
+            <button type="button" onclick="closePopup()">OK</button>
+          </div>
+
         </div>
       </div>
     </div>
@@ -144,6 +148,18 @@
         </tr>
       </table>
     </div>
+
+    <script>
+      let popup = document.getElementById("popup");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }      
+      
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
 
     </body>
     <div class="se-pre-con"></div>

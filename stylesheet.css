@@ -8,7 +8,6 @@
     margin: 0;
     font-size: 17px;
     background-color: rgba(0,0,0,.1);
-    
   }
 
   html {
@@ -33,14 +32,17 @@
 
   .button-design {
     border: none;
-    outline: 0;
     display: inline-block;
     padding: 4px;
-    color: white;
-    background-color: #000;
     text-align: center;
-    cursor: pointer;
     width: 100%;
+
+    background: #1ba0f2;
+    color: #fff;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) ;
   }
 
   .button-design:hover {
@@ -320,6 +322,7 @@
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
   
   /* Fake image, just for this example */
@@ -537,3 +540,71 @@
   }
 }
 
+/* ------------------------ */
+
+.popup-container {
+  width: 700px;
+  background: white;
+  border-radius: 4px;
+  position: fixed;
+  top: calc(50% - 50px);;
+  left: calc(50% - 25px);
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  box-shadow: 0 2px 5px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: rgb(215, 211, 211);
+}
+
+.popup-img {
+  width: 150px;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-container h2 {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 30px 0 10px;
+}
+
+.popup-container button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #1ba0f2;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) ;
+}
+
+.popup-container button:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  .popup-container {
+    width: 100%;
+    top: calc(50%);
+    left: calc(50%);
+  }
+
+  body {
+    background-color: red;
+  }
+}
