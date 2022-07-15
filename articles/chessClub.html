@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- CREATED WITH ♥ BY MAGNUS HEIDE -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -62,7 +63,7 @@
           <p>It is our duty to remind them that they are <span>loved</span> and <span>seen</span> for who they are.</p>
           <p>I imagine of <span>The Watoto Library</span>.</p>
         </div>
-        
+
         <br>
         <h3>Watoto and Chess</h3>
         <img src="../media/chess/boys-playing-chess.png" class="img">
@@ -144,17 +145,12 @@
           showSlides(slideIndex);
           myTimer = setInterval(function(){plusSlides(1)}, 4000);
         
-          //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
           slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-        
-          //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-          // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
         
           slideshowContainer.addEventListener('mouseenter', pause)
           slideshowContainer.addEventListener('mouseleave', resume)
       })
 
-      // NEXT AND PREVIOUS CONTROL
       function plusSlides(n){
         clearInterval(myTimer);
         if (n < 0){
@@ -163,8 +159,6 @@
         showSlides(slideIndex += 1); 
         }
         
-        //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-        
         if (n === -1){
           myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
         } else {
@@ -172,7 +166,6 @@
         }
       }
 
-      //Controls the current slide and resets interval if needed
       function currentSlide(n){
         clearInterval(myTimer);
         myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);

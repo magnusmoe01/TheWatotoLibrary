@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- CREATED WITH ♥ BY MAGNUS HEIDE -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,9 +42,9 @@
         </div>
     </div>
 
-    <nav class="navbar-2" id="myTopnav">
+    <nav class="navbar-2" id="myTopnav"  onclick="myFunction()">
       <a href="index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon">
           <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
           <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
       </a>
@@ -71,11 +72,12 @@
           <p>I imagine of <span>The Watoto Library</span>.</p>
         </div>
 
-        <br><br>
-        <img src="media/paintings/yellowPainting.png" class="img" style="transform: rotate(-5deg);">
-        <br><br>
-        <h3 class="center">We Play Chess!</h3>
+        <br>
+        <h3>Watoto and Chess</h3>
         <img src="media/chess/boys-playing-chess.png" class="img">
+        <p>We play chess!</p>
+        <img src="media/chess/group-playing-chess-reduced.jpeg" class="img">
+        <p>Young kids learning the game of chess.</p>
       </div>
 
       <div class="main" id="main">
@@ -110,11 +112,12 @@
     <script>
 
       function myFunction() {
-          var x = document.getElementById("myLinks");
+          var x = document.getElementById("nav");
           if (x.style.display === "block") {
               x.style.display = "none";
           } else {
               x.style.display = "block";
+              document.getElementById("myTopnav").style.backgroundColor = "#1ba0f2";
           }
 
           var a = document.getElementById("activate-menu");
@@ -122,9 +125,11 @@
           if (a.style.display === "block") {
               a.style.display = "none";
               d.style.display = "block";
+              document.getElementById("myTopnav").style.backgroundColor = "#1565C0";
           } else {
               d.style.display = "none";
               a.style.display = "block";
+              document.getElementById("myTopnav").style.backgroundColor = "#1ba0f2";
           }
 
       }
