@@ -41,6 +41,14 @@
         </div>
     </div>
   </div>
+
+  <nav class="navbar-2" id="nav2"  onclick="myFunction()">
+    <a href="index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a>
+    <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
+        <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
+    </a>
+</nav>
     
     <ul class="navigation" id="nav">
       <li><a href="index.html">HOME</a></li>
@@ -125,6 +133,30 @@
         </tr>
       </table>
     </div>
+
+    <script>
+          function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.style.display === "block") {
+              x.style.display = "none";
+          } else {
+              x.style.display = "block";
+              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
+          }
+
+          var a = document.getElementById("activate-menu");
+          var d = document.getElementById("deactivate-menu");
+          if (a.style.display === "block") {
+              a.style.display = "none";
+              d.style.display = "block";
+              document.getElementById("nav2").style.backgroundColor = "#1565C0";
+          } else {
+              d.style.display = "none";
+              a.style.display = "block";
+              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
+          }
+      }
+    </script>
 
     </body>
     <div class="se-pre-con"></div>
