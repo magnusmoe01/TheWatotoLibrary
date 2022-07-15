@@ -194,7 +194,7 @@
       top: 50%;
       left: 0;
       transform: translateY(-50%);
-      background-color: rgba(0,0,0,.8);
+      background-color: rgba(0, 0, 0, 0.53);
       color: #fff;
       margin: 0px;
       padding: 15px;
@@ -254,10 +254,15 @@
           bottom: 0;
           transform: initial;
           padding: 15px;
+          background-color: rgba(0, 0, 0, 0.445);
+          text-align: center;
       }
 
       .slideshow-item-text h5 {
           font-size: 26px;
+          text-shadow: 2px 2px black;
+          padding: 10px;
+          margin: 0;
       }      
       
       .slideshow-item-text p {
