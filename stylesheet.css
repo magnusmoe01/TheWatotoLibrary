@@ -21,6 +21,10 @@
     font-family: Verdana, Tahoma, sans-serif;
   }
 
+  a {
+    color: black;
+  }
+
   .btn {
     padding: 20px;
     padding-left: 0;
@@ -638,4 +642,10 @@
     padding: 2%;
   }
 
+}
+
+/* ------------------- */
+
+.pointer:hover {
+  cursor: pointer;
 }
