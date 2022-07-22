@@ -138,10 +138,10 @@
         <div class="article">
           <h2>Contact Us</h2>
           <form accept-charset="utf-8" action="https://submit-form.com/JNE0JVGT" method="post">
-            <input type="hidden" name="_redirect" value="http://thewatotolibrary.org/getInTouch.html#/"/>
+            <input type="hidden" name="_redirect" value="http://thewatotolibrary.org/thanks.html#/"/>
             <p>
               <label for="full-name">Full Name</span></label><br>
-              <input type="text" name="name" id="full-name" required="">
+              <input type="text" name="name" id="full-name">
             </p>
             <p>
               <label for="email-address">Email Address<span style="color: red;">*</span></label><br>
@@ -153,8 +153,9 @@
             </p>
             
             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            <input type="submit" class="button-design" value="Submit" onclick="changeToSubmission()">
+            
           </form>
+          <input type="submit" class="button-design" value="Submit">
           
           <!-- <p><a href="mailto:okothbrandon@gmail.com" class="button-design" style="width: 200px;">Send an E-mail</a></p> -->
 
@@ -163,7 +164,6 @@
 
             <img src="media/team/brandon-businessCard.jpeg" class="img" id="brandonBusinessCard" onclick="changeToBrandon()">
             <img src="media/team/magnus-businessCard.png" class="img" id="magnusBusinessCard" onclick="changeToMagnus()"/>
-            <img src="media/random/thankYou.png" class="img" id="submissionCard" onclick="changeToSubmission()"/>
 
             <button type="button" onclick="closePopup()">OK</button>
           </div>
@@ -191,12 +191,10 @@
         if (document.getElementById("brandonBusinessCard").src == "media/team/brandon-businessCard.jpeg"){
             document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.jpeg";
             magnusBusinessCard.style.display = "none";
-            submissionCard.style.display = "none";
             brandonBusinessCard.style.display = "block";
         } else {
             document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.jpeg";
             magnusBusinessCard.style.display = "none";
-            submissionCard.style.display = "none";
             brandonBusinessCard.style.display = "block";
         }
     }
@@ -205,37 +203,12 @@
         if (document.getElementById("magnusBusinessCard").src == "media/team/magnus-businessCard.png"){
             document.getElementById("magnusBusinessCard").src = "media/team/magnus-businessCard.png";
             brandonBusinessCard.style.display = "none";
-            submissionCard.style.display = "none";
             magnusBusinessCard.style.display = "block";
         } else {
             document.getElementById("magnusBusinessCard").src = "media/team/magnus-businessCard.png";
             brandonBusinessCard.style.display = "none";
-            submissionCard.style.display = "none";
             magnusBusinessCard.style.display = "block";
         }
-    }
-    
-    function changeToSubmission() {
-      document.addEventListener('DOMContentLoaded', function() {
-        openPopup();
-
-        if (document.getElementById("submissionCard").src == "media/random/thankYou.png"){
-                document.getElementById("submissionCard").src = "media/random/thankYou.png";
-                magnusBusinessCard.style.display = "none";
-                brandonBusinessCard.style.display = "none";
-                submissionCard.style.display = "block";
-        } else {
-            document.getElementById("submissionCard").src = "media/random/thankYou.png";
-            magnusBusinessCard.style.display = "none";
-            brandonBusinessCard.style.display = "none";
-            submissionCard.style.display = "block";
-        }
-      }, false);
-        
-        
-
-  
-        
     }
 
       function openPopup() {
