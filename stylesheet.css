@@ -31,6 +31,7 @@
     margin-top: 10px;
     font-size: 17px;
     padding: 5px;
+    border-bottom: 1px solid black;
 
     border-top-style: hidden;
     border-right-style: hidden;
@@ -45,6 +46,7 @@
     font-size: 17px;
     padding: 5px;
     resize: none;
+    border-bottom: 1px solid black;
 
     border-top-style: hidden;
     border-right-style: hidden;
@@ -185,6 +187,10 @@
   .img {
       width: 100%;
       border-radius: 5px;
+  }
+
+  .side-vision {
+    text-align: center;
   }
 
   .logo {
@@ -489,6 +495,7 @@
 }
 
 
+
 /* -----------------SLIDESHOW------------------ */
 
 .slideshow-container {
@@ -689,3 +696,8 @@
 .pointer:hover {
   cursor: pointer;
 }
+
+.chess-peak {
+  text-align: center;
+}
+
