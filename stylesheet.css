@@ -13,7 +13,7 @@
   }
 
   html {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   p, u, b {
@@ -102,7 +102,11 @@
   }
 
   .readmore {
-    font-weight: bold;
+    cursor:pointer;
+  }  
+
+  .allNewsLetters:hover {
+    cursor: pointer;
   }
 
 
@@ -395,18 +399,21 @@
   
   /* Footer */
   .footer {
-    padding: 20px;
-    text-align: center;
+    padding: 8px;
     background: #ddd;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: flex-start;
   }
 
-  .footer table {
-    width: 100%;
+  .footer p {
+    text-align: center;
   }
+
+ /* .footer table {
+    width: 100%;
+  } */
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
