@@ -22,7 +22,7 @@
   }
 
   a {
-    color: black;
+    font-family: Verdana, Tahoma, sans-serif;
   }
 
   input {
@@ -379,6 +379,10 @@
    /* margin-top: 10px; */
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .article-click a {
+    line-height: 25px;
   }
 
   .flex-container {
