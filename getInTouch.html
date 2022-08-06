@@ -108,12 +108,12 @@
               </div>
 
               <div class="column">
-                  <div class="card">
+                  <div class="card" onclick="changeToSandra(), openPopup()">
                     <img src="media/team/sandra-reduced.jpeg" alt="Sandra" style="width:100%">
                     <div class="container">
                       <h2>Sandra Kanstad</h2>
                       <p class="title">Cofounder<br>Chairman of SoulKids Norway</p>
-                      <p><a class="button-design">Contact</a></p>
+                      <p><a class="button-design">Contact info</a></p>
                     </div>
                   </div>
               </div>
@@ -169,7 +169,8 @@
           <div class="popup-container" id="popup">
             <img src="media/logo/logo-whitebg-transparent.png" class="popup-img">
 
-            <img src="media/team/brandon-businessCard.jpeg" class="img" id="brandonBusinessCard" onclick="changeToBrandon()">
+            <img src="media/team/brandon-businessCard.png" class="img" id="brandonBusinessCard" onclick="changeToBrandon()">
+            <img src="media/team/sandra-businessCard.png" class="img" id="sandraBusinessCard" onclick="changeToSandra()"/>
             <img src="media/team/magnus-businessCard.png" class="img" id="magnusBusinessCard" onclick="changeToMagnus()"/>
 
             <button type="button" onclick="closePopup()">OK</button>
@@ -189,14 +190,30 @@
       let popup = document.getElementById("popup");    
     
     function changeToBrandon() {
-        if (document.getElementById("brandonBusinessCard").src == "media/team/brandon-businessCard.jpeg"){
-            document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.jpeg";
+        if (document.getElementById("brandonBusinessCard").src == "media/team/brandon-businessCard.png"){
+            document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.png";
             magnusBusinessCard.style.display = "none";
+            sandraBusinessCard.style.display = "none";
             brandonBusinessCard.style.display = "block";
         } else {
-            document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.jpeg";
+            document.getElementById("brandonBusinessCard").src = "media/team/brandon-businessCard.png";
             magnusBusinessCard.style.display = "none";
+            sandraBusinessCard.style.display = "none";
             brandonBusinessCard.style.display = "block";
+        }
+    }
+
+    function changeToSandra() {
+        if (document.getElementById("sandraBusinessCard").src == "media/team/sandra-businessCard.png"){
+            document.getElementById("sandraBusinessCard").src = "media/team/sandra-businessCard.png";
+            brandonBusinessCard.style.display = "none";
+            magnusBusinessCard.style.display = "none";
+            sandraBusinessCard.style.display = "block";
+        } else {
+            document.getElementById("sandraBusinessCard").src = "media/team/sandra-businessCard.png";
+            brandonBusinessCard.style.display = "none";
+            magnusBusinessCard.style.display = "none";
+            sandraBusinessCard.style.display = "block";
         }
     }
 
@@ -204,10 +221,12 @@
         if (document.getElementById("magnusBusinessCard").src == "media/team/magnus-businessCard.png"){
             document.getElementById("magnusBusinessCard").src = "media/team/magnus-businessCard.png";
             brandonBusinessCard.style.display = "none";
+            sandraBusinessCard.style.display = "none";
             magnusBusinessCard.style.display = "block";
         } else {
             document.getElementById("magnusBusinessCard").src = "media/team/magnus-businessCard.png";
             brandonBusinessCard.style.display = "none";
+            sandraBusinessCard.style.display = "none";
             magnusBusinessCard.style.display = "block";
         }
     }
