@@ -19,7 +19,10 @@
 
 <body>
     <div style="text-align: center; position: absolute; top:  50%; left: 50%; transform: translate(-50%,-50%);" id="idpassworddiv">
-      <h1>This website is not yet active.</h1>
+      <h1>This website is not yet active</h1>
+      <br>
+      <h2>Launching in <span id="demo"></span></h2>
+      <br>
       <p>Enter password to access: <input style="width:200px;" id="idpassword"><button id="idgo" style="width: 50px; margin-left: 10px;">Go</button></p>
       <p id="idfeedback" style="color:red; height:10px;"> </p>
     </div>
@@ -42,6 +45,27 @@
         }
         
       }
+
+      var countDownDate = new Date("Aug 20, 2022 16:00:00").getTime();
+
+      var x = setInterval(function() {
+
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "Launching!";
+        }
+        }, 1000);
 
     </script>
 
