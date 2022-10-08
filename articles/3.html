@@ -96,7 +96,59 @@
             <a href="../articles.html#3" class="button">&#8592; Back to Newsletters</a>
           </div>
           <div class="article">
-            <h2>Painting The Library</h2>
+            <div class="flex-image-text">
+              <div>
+                <h2>Painting The Library</h2>
+                <p>Today when you walk into the library, you will find drawings done on the wall by the kids of our
+                  project. When we first moved into the place, the walls had the original cement color lacking
+                  warmth to the space. After consultation with the kids we decided to make the walls more playful
+                  and fun.</p>
+              </div>
+              <img src="../media/study/group-studying-reduced.jpeg" class="img">
+            </div>
+            <br>
+            <h3>Sharing and creating</h3>
+            <p>The kids were able to make the space to be vibrant and welcoming for every child. They shared
+              the paints and brushes among themselves giving everyone a chance to participate. The wall has
+              come out natural to show cases the diversity of the children’s mind as they come from different
+              backgrounds and upbringings. These different backgrounds results to different personalities.</p>
+            <br>
+            <h3>Everyone deserves a high five</h3>
+            <p>When you pay attention to the wall, you will find lots of love/heart drawings. As your eyes
+              continue reading the wall, you will spot many hand-prints made by the kids using paint. I believe
+              this is to remind us that we all deserve a high five. We are all loved and appreciated just the way
+              we are.</p>
+            <p>They have shared with one another their vulnerabilities, and found the courage to come together
+              to laugh, learn and play. One of our kids, Shadrack Odongo aka Babji tells of his experience after
+              painting the wall. He says he got a chance to tell others about himself and was able to make new
+              friends.</p>
+            <br>
+            <div class="slideshow-container">
+              <div class="slideshow-inner">
+                    <div class="mySlides fade">
+                      <img  src='../media/articles/3/IMG_8027-780x420-reduced.jpeg'/>
+                    </div>
+                    <div class="mySlides fade">
+                      <img  src='../media/chess/780x420/boys-playing-chess-5-780x420-reduced.jpeg'/>
+                    </div>
+                    <div class="mySlides fade">
+                      <img  src='../media/chess/780x420/kids-playing-chess-1-780x420-reduced.jpeg'/>
+                    </div>
+                    <div class="mySlides fade">
+                      <img  src='../media/chess/780x420/kids-playing-chess-2-780x420-reduced.jpeg'/>
+                    </div>
+              </div>
+              <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+              <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+            </div>
+            <br/>
+            <div style='text-align: center;'>
+              <span class="dot" onclick='currentSlide(1)'></span>
+              <span class="dot" onclick='currentSlide(2)'></span>
+              <span class="dot" onclick='currentSlide(3)'></span>
+              <span class="dot" onclick='currentSlide(4)'></span>
+            </div>
+
           </div>
       </div>
     </div>
@@ -106,26 +158,89 @@
     </div>
   
     <script>
-          function myFunction() {
-          var x = document.getElementById("nav");
-          if (x.style.display === "block") {
-              x.style.display = "none";
-          } else {
-              x.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
-          }
 
-          var a = document.getElementById("activate-menu");
-          var d = document.getElementById("deactivate-menu");
-          if (a.style.display === "block") {
-              a.style.display = "none";
-              d.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1565C0";
-          } else {
-              d.style.display = "none";
-              a.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
-          }
+      var slideIndex = 1;
+      var myTimer;
+      var slideshowContainer;
+
+      window.addEventListener("load",function() {
+          showSlides(slideIndex);
+          myTimer = setInterval(function(){plusSlides(1)}, 4000);
+        
+          slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+        
+          slideshowContainer.addEventListener('mouseenter', pause)
+          slideshowContainer.addEventListener('mouseleave', resume)
+      })
+
+      function plusSlides(n){
+        clearInterval(myTimer);
+        if (n < 0){
+          showSlides(slideIndex -= 1);
+        } else {
+        showSlides(slideIndex += 1); 
+        }
+        
+        if (n === -1){
+          myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+        } else {
+          myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+        }
+      }
+
+      function currentSlide(n){
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n){
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activeDot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " activeDot";
+      }
+
+      pause = () => {
+        clearInterval(myTimer);
+      }
+
+      resume = () =>{
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+      }
+
+
+
+      function myFunction() {
+      var x = document.getElementById("nav");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+          document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
+      }
+
+      var a = document.getElementById("activate-menu");
+      var d = document.getElementById("deactivate-menu");
+      if (a.style.display === "block") {
+          a.style.display = "none";
+          d.style.display = "block";
+          document.getElementById("nav2").style.backgroundColor = "#1565C0";
+      } else {
+          d.style.display = "none";
+          a.style.display = "block";
+          document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
+      }
       }
     </script>
     </body>

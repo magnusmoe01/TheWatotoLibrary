@@ -369,13 +369,14 @@
   .article {
     background-color: white;
     padding: 20px;
+    margin-left: -20px;
     border-radius: 5px;
   }  
   
   .article-click {
     background-color: white;
     padding: 20px;
-   /* margin-top: 10px; */
+    margin-left: -20px;
     border-radius: 5px;
     cursor: pointer;
   }
@@ -425,6 +426,17 @@
     .row {   
       flex-direction: column;
     }
+
+    .main {
+      margin-top: 20px;
+      padding: 0px;
+    }
+
+    .article-click, .article {
+      border-radius: 0px;
+      margin-left: 0px;
+    }
+
   }
   
   .container {
@@ -471,11 +483,12 @@
 }
 
 .flex-image-text img {
-  max-height: 200px;
+  max-height: 300px;
+  max-width: 50%;
   margin-left: 15px;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1200px) {
   .flex-image-text {
     flex-flow: column wrap;
     padding: 0;
@@ -483,7 +496,7 @@
 
   .flex-image-text img {
     max-height:none;
-    width: 100%;
+    max-width: 100%;
     margin: 0;
   }
 

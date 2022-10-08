@@ -117,22 +117,79 @@
         </div>  
         
         <br>
-        
-        <div class="article-click" onclick="location.href='articles/studyGroup.html#nav';" id="studyGroup">
-            <div class="flex-image-text">
-              <div>
-                <h3>Study Group</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa perspiciatis, sapiente quasi nam minus. Recusandae cupiditate assumenda asperiores alias rerum! Aliquid dolore et quo quaerat eveniet veniam dicta itaque!</p>
-                <p class="readmore">Read more &#8594;</p>
-              </div>
-              <img src="media/study/group-studying-reduced.jpeg" class="img">
-            </div>
-        </div>
-        
-        <br>
 
-        <div class="article-click">
+        <div class="article-click" onclick="location.href='articles/danceGroup.html#nav';" id="danceGroup">
+          <div class="flex-image-text">
+            <div>
+              <h3>Dance Group</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa perspiciatis, sapiente quasi nam minus. Recusandae cupiditate assumenda asperiores alias rerum! Aliquid dolore et quo quaerat eveniet veniam dicta itaque!</p>
+              <p class="readmore">Read more &#8594;</p>
+            </div>
+            <img src="media/study/group-studying-reduced.jpeg" class="img">
+          </div>
+      </div>
+
+      <br>
+        
+      <div class="article-click" onclick="location.href='articles/studyGroup.html#nav';" id="studyGroup">
+          <div class="flex-image-text">
+            <div>
+              <h3>Study Group</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa perspiciatis, sapiente quasi nam minus. Recusandae cupiditate assumenda asperiores alias rerum! Aliquid dolore et quo quaerat eveniet veniam dicta itaque!</p>
+              <p class="readmore">Read more &#8594;</p>
+            </div>
+            <img src="media/study/group-studying-reduced.jpeg" class="img">
+          </div>
+      </div>
+      
+       <br>
+
+       <div class="article">
+        <h3>Who We Are Engaging With</h3>
+        <p>
+          Anytime you visit Kibera you will be met with vibrant, loving, brilliant young kids filled with love and care for one another. Kids who are faced with challenges that require them to tackle with resilience, patience and hope. As young as four, the kids know that they must work extra hard for a better future for themselves and their families.
+        </p>
+        <p>
+          These kids go to public schools around them and the majority of these schools are overwhelmed by the number of kids attending. The resources provided by the government are scarce, leaving the schools surviving for excistance. When a classroom is filled with over ninety children and only one class teacher, you will find that many of the kids go unnoticed, unappreciated, and not well taken care of.
+        </p>
+        <p>
+          The kids come from very humble backgrounds, from families that can barely maintain or even afford their basic needs. They live to survive each day. Sharing in the struggles of their parents, neighbours and friends, hoping for brighter days ahead. They are faced with challenges as early as childhood and are filled with many responsibilities. The children are not given the space to express themselves and the freedom to be children. Most of the time they become co-parents to their siblings or young ones when their parents are out in search of food.
+        </p>
+        <p>
+          Living in single rooms, without running water and having to share a bathroom or washroom with more than hundreds of strangers, these kids live in the traumas of poverty. They witness domestic violence happening at home. They struggle to find guidance and support, hence ending up not knowing where they belong.
+        </p>
+    </div>
+
+    <br>
+
+        <div class="article">
           <h3>Inside The Watoto Library</h3>
+          <br>
+            <div class="slideshow-container">
+              <div class="slideshow-inner">
+                    <div class="mySlides fade">
+                      <img  src='media/chess/780x420/boys-playing-chess-4-780x420-reduced.jpeg'/>
+                    </div>
+                    <div class="mySlides fade">
+                      <img  src='media/chess/780x420/boys-playing-chess-5-780x420-reduced.jpeg'/>
+                    </div>
+                    <div class="mySlides fade">
+                      <img  src='media/chess/780x420/kids-playing-chess-1-780x420-reduced.jpeg'/>
+                    </div>
+                    <div class="mySlides fade">
+                      <img  src='media/chess/780x420/kids-playing-chess-2-780x420-reduced.jpeg'/>
+                    </div>
+              </div>
+              <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+              <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+            </div>
+            <br/>
+            <div style='text-align: center;'>
+              <span class="dot" onclick='currentSlide(1)'></span>
+              <span class="dot" onclick='currentSlide(2)'></span>
+              <span class="dot" onclick='currentSlide(3)'></span>
+              <span class="dot" onclick='currentSlide(4)'></span>
+            </div>
         </div>
 
       </div>
@@ -143,6 +200,65 @@
     </div>
 
     <script>
+      var slideIndex = 1;
+      var myTimer;
+      var slideshowContainer;
+
+      window.addEventListener("load",function() {
+          showSlides(slideIndex);
+          myTimer = setInterval(function(){plusSlides(1)}, 4000);
+        
+          slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+        
+          slideshowContainer.addEventListener('mouseenter', pause)
+          slideshowContainer.addEventListener('mouseleave', resume)
+      })
+
+      function plusSlides(n){
+        clearInterval(myTimer);
+        if (n < 0){
+          showSlides(slideIndex -= 1);
+        } else {
+        showSlides(slideIndex += 1); 
+        }
+        
+        if (n === -1){
+          myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+        } else {
+          myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+        }
+      }
+
+      function currentSlide(n){
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n){
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activeDot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " activeDot";
+      }
+
+      pause = () => {
+        clearInterval(myTimer);
+      }
+
+      resume = () =>{
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+      }
           function myFunction() {
           var x = document.getElementById("nav");
           if (x.style.display === "block") {
