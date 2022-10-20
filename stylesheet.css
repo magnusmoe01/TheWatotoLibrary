@@ -127,7 +127,7 @@
   
   list-style: none;
   margin: 0; 
-  background: #1ba0f2;
+  background-color: #1ba0f2;
 }
 
 .navigation a {
@@ -138,7 +138,8 @@
 }
 
 .navigation a:hover {
-  background: #1565C0;
+  background-color: #1565C0;
+  transition: background-color 0.2s ease;
 }
 
 .active {
@@ -437,11 +438,13 @@
 
     .main {
       margin-top: 20px;
-      padding: 5px;
+      padding: 3px;
     }
 
     .article-click, .article {
-      margin-left: 0px;
+      margin: 10px;
+      margin-top: 0px;
+      padding: 15px;
     }
 
   }
@@ -759,7 +762,7 @@
   padding-bottom: 5px;
   margin-right: 10px;
   margin-top: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   border-radius: 6px;
   background-color: rgba(211, 211, 211, 0.125);
   border: 1px solid rgba(128, 128, 128, 0.352);
@@ -796,3 +799,4 @@
 .div-back:hover {
   transform: scale(1.05);
 }
+
