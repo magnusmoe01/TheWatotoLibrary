@@ -90,10 +90,11 @@
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2) ;
+    transition: transform .2s;
   }
 
   .button-design:hover {
-    font-weight: bold;
+    transform: scale(1.05);
   }
 
   .title {
@@ -103,7 +104,14 @@
 
   .readmore {
     cursor:pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }  
+
+  .allNewsLetters {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
   .allNewsLetters:hover {
     cursor: pointer;
@@ -725,3 +733,66 @@
   text-align: center;
 }
 
+.newsletter-wrapping {
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #1ba0f227;
+  border: 1px solid rgba(128, 128, 128, 0.352);
+  display: inline-block;
+  transition: transform .2s;
+}
+
+.newsletter-wrapping a {
+  color: #443c3e;
+}
+
+.newsletter-wrapping:hover {
+  transform: scale(1.05);
+}
+
+.div-readmore {
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  border-radius: 6px;
+  background-color: rgba(211, 211, 211, 0.125);
+  border: 1px solid rgba(128, 128, 128, 0.352);
+  display: inline-block;
+  transition: transform .2s;
+}
+
+.div-readmore a {
+  color: #443c3e;
+}
+
+.div-readmore:hover {
+  transform: scale(1.05);
+}
+
+.div-back {
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: rgba(211, 211, 211, 0.125);
+  border: 1px solid rgba(128, 128, 128, 0.352);
+  display: inline-block;
+  transition: transform .2s;
+}
+
+.div-back a {
+  color: #443c3e;
+}
+
+.div-back:hover {
+  transform: scale(1.05);
+}
