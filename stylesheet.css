@@ -852,9 +852,9 @@
   
 /* google translate banner-frame */
 
-.goog-te-banner-frame{
+/*.goog-te-banner-frame{
   display:none !important;
-}
+} */
 
 #goog-gt-tt, .goog-te-balloon-frame{
   display: none !important;
