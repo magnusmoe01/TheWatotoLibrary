@@ -129,6 +129,7 @@
   list-style: none;
   margin: 0; 
   background-color: #1ba0f2;
+  user-select: none;
 }
 
 .navigation a {
@@ -136,6 +137,7 @@
   display: block;
   padding: 1em;
   color: white;
+  user-select: none;
 }
 
 .navigation a:hover {
@@ -809,4 +811,56 @@
 .div-back:hover {
   transform: scale(1.05);
 }
+
+
+/* ------------------- */
+
+#google_translate_element{
+  height: 55px;
+  text-decoration: none;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  user-select: none;
+}
+
+#google_translate_element select{
+  background:#1ba0f2;
+  color:white;
+  border: 1px solid white;
+  border-radius: 6px;
+  height: 30px;
+  padding: auto;
+  text-align: center;
+  margin-top: 12px;
+  user-select: none;
+}
+
+#google_translate_element select:hover{
+  background-color: #1565C0;
+  transition: background-color 0.2s ease;
+}
+  
+/*google translate link | logo */
+.goog-logo-link{
+  display:none!important;
+  }
+.goog-te-gadget{
+  color:transparent!important;
+}
+  
+/* google translate banner-frame */
+
+.goog-te-banner-frame{
+  display:none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame{
+  display: none !important;
+}
+
+.goog-text-highlight{ 
+  background: none !important; 
+  box-shadow: none !important;}
 

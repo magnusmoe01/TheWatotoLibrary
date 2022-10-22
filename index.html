@@ -9,6 +9,9 @@
     <link rel="icon" type="image/x-icon" href="media/logo/favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/translate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
           $(".se-pre-con").fadeOut("slow");;
@@ -18,9 +21,8 @@
 </head>
 
 <body>
-    <div id="homepage">
-    <div class="slideshow">
-      <div id="google_translate_element"></div>
+  <div id="homepage">
+      <div class="slideshow">
         <div class="slideshow-item">
             <img src="media/study/boy-studying-reduced.jpeg">
             <div class="slideshow-item-text">
@@ -42,70 +44,71 @@
                 <p>A place where they can freely embrace who they are. Understand the value of one another. Engage them in activities that will help boost their confidence, self-esteem and improve their focus in all that they do.</p>
             </div>
         </div>
-    </div>
-
-    <div id="/"></div>
-    
-    <nav class="navbar-2" id="nav2"  onclick="myFunction()">
-      <a href="index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a>
-      <a href="javascript:void(0);" class="icon">
-          <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
-          <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
-      </a>
-  </nav>
-
-    <ul class="navigation" id="nav">
-      <li><a href="index.html" class="active">HOME</a></li>
-      <li><a href="whatWeDo.html#/">WHAT WE DO</a></li>
-      <li><a href="about.html#/">ABOUT US</a></li>
-      <li><a href="getInTouch.html#/">GET IN TOUCH</a></li>
-      <li><a href="donate.html#/">DONATE</a></li>
-    </ul>
-    
-    <div class="row" id="flex">
-      <div class="side" id="side">
-        <div class="logo" style="cursor:pointer" onclick="location.href='index.html';">
-        <img src="media/logo/logo-transparent.png" class="img" style="width: 60%;">
-        </div>
-        
-        <div class="vision-statement">
-          <p>Imagine a place <span>valued</span> and <span>appreciated</span>.</p>
-          <p>A place where kids can come in, feel good about themselves, <span>trust</span> and <span>understand</span> one another.</p>
-          <p>Imagine a place that believes that each child has a <span>potential</span> and <span>purpose</span>.</p>
-          <p>It is our duty to remind them that they are <span>loved</span> and <span>seen</span> for who they are.</p>
-          <p>I imagine of <span>The Watoto Library</span>.</p>
-        </div>
-
-        <br><br>
-        <div class="pointer" onclick="location.href='articles/chessClub.html#nav';">
-        <div class="chess-peak">
-          <img src="media/chess/boys-playing-chess.png" class="img">
-        </div>
-        </div>
-        <br>
-        <div class="side-vision">
-          <h3>Our Vision</h3>
-          <p>The principle goal of The Watoto Library is to have an impact on the lives of many kids living with the traumas of poverty, faced by domestic violence, denied or not provided with the space to express their thoughts and feelings.</p>
-          <p>&#9733;</p>
-          <p>Our library is dedicated to provide a safe and welcoming environment to kids so that they can come in and feel loved and appreciated. We are creating a society that values and respects its children. </p>
-          <p>&#9733;</p>
-          <p>A place where they can freely embrace who they are. Understand the value of one another. Engage them in activities that will help boost their confidence, self-esteem and improve their focus in all that they do.</p>
-        </div>
       </div>
 
-      <div class="main" id="main">
-        <div class="article-click" onclick="location.href='articles/3.html#nav';" id="3">
-          <div class="flex-image-text">
-            <div>
-              <h2>Painting The Library</h2>
-              <h5>Posted on October 8, 2022</h5>
-              <p>Today when you walk into the library, you will find drawings done on the wall by the kids of our
-                project. When we first moved into the place, the walls had the original cement color lacking
-                warmth to the space. After consultation with the kids we decided to make the walls more playful
-                and fun.</p>
-              <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
+      <div id="/"></div>
+    
+      <nav class="navbar-2" id="nav2"  onclick="myFunction()">
+        <a href="index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a>
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
+            <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
+        </a>
+      </nav>
+
+      <ul class="navigation" id="nav">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="whatWeDo.html#/">WHAT WE DO</a></li>
+        <li><a href="about.html#/">ABOUT US</a></li>
+        <li><a href="getInTouch.html#/">GET IN TOUCH</a></li>
+        <li><a href="donate.html#/">DONATE</a></li>
+        <li><div id="google_translate_element"></div></li>
+      </ul>
+    
+      <div class="row" id="flex">
+        <div class="side" id="side">
+          <div class="logo" style="cursor:pointer" onclick="location.href='index.html';">
+            <img src="media/logo/logo-transparent.png" class="img" style="width: 60%;">
+          </div>
+          
+          <div class="vision-statement">
+            <p>Imagine a place <span>valued</span> and <span>appreciated</span>.</p>
+            <p>A place where kids can come in, feel good about themselves, <span>trust</span> and <span>understand</span> one another.</p>
+            <p>Imagine a place that believes that each child has a <span>potential</span> and <span>purpose</span>.</p>
+            <p>It is our duty to remind them that they are <span>loved</span> and <span>seen</span> for who they are.</p>
+            <p>I imagine of <span>The Watoto Library</span>.</p>
+          </div>
+
+          <br><br>
+          <div class="pointer" onclick="location.href='articles/chessClub.html#nav';">
+            <div class="chess-peak">
+              <img src="media/chess/boys-playing-chess.png" class="img">
             </div>
-            <img src="media/paintings/painting-library-1-reduced.jpeg" class="img">
+          </div>
+          <br>
+          <div class="side-vision">
+            <h3>Our Vision</h3>
+            <p>The principle goal of The Watoto Library is to have an impact on the lives of many kids living with the traumas of poverty, faced by domestic violence, denied or not provided with the space to express their thoughts and feelings.</p>
+            <p>&#9733;</p>
+            <p>Our library is dedicated to provide a safe and welcoming environment to kids so that they can come in and feel loved and appreciated. We are creating a society that values and respects its children. </p>
+            <p>&#9733;</p>
+            <p>A place where they can freely embrace who they are. Understand the value of one another. Engage them in activities that will help boost their confidence, self-esteem and improve their focus in all that they do.</p>
+          </div>
+        </div>
+
+        <div class="main" id="main">
+          <div class="article-click" onclick="location.href='articles/3.html#nav';" id="3">
+            <div class="flex-image-text">
+              <div>
+                <h2>Painting The Library</h2>
+                <h5>Posted on October 8, 2022</h5>
+                <p>Today when you walk into the library, you will find drawings done on the wall by the kids of our
+                  project. When we first moved into the place, the walls had the original cement color lacking
+                  warmth to the space. After consultation with the kids we decided to make the walls more playful
+                  and fun.</p>
+                <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
+              </div>
+              <img src="media/paintings/painting-library-1-reduced.jpeg" class="img">
           </div>
         </div>
         <br>
@@ -152,38 +155,6 @@
       <p>© 2022 The Watoto Library</p>
     </div>
   
-    <script type="text/javascript">
-
-      function myFunction() {
-          var x = document.getElementById("nav");
-          if (x.style.display === "block") {
-              x.style.display = "none";
-          } else {
-              x.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
-          }
-
-          var a = document.getElementById("activate-menu");
-          var d = document.getElementById("deactivate-menu");
-          if (a.style.display === "block") {
-              a.style.display = "none";
-              d.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1565C0";
-          } else {
-              d.style.display = "none";
-              a.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
-          }
-      }
-
-  </script>
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-  }
-  </script>
-  
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </div>
   </body>
   <div class="se-pre-con"></div>

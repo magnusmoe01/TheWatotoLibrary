@@ -9,6 +9,10 @@
     <link rel="icon" type="image/x-icon" href="../media/logo/favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../js/slideshow.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/translate.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
           $(".se-pre-con").fadeOut("slow");;
@@ -31,6 +35,7 @@
       <li><a href="../about.html#/">ABOUT US</a></li>
       <li><a href="../getInTouch.html#/">GET IN TOUCH</a></li>
       <li><a href="../donate.html#/">DONATE</a></li>
+      <li><div id="google_translate_element"></div></li>
     </ul>
 
     <div class="row">
@@ -126,89 +131,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var slideIndex = 1;
-      var myTimer;
-      var slideshowContainer;
-
-      window.addEventListener("load",function() {
-          showSlides(slideIndex);
-          myTimer = setInterval(function(){plusSlides(1)}, 4000);
-        
-          slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-        
-          slideshowContainer.addEventListener('mouseenter', pause)
-          slideshowContainer.addEventListener('mouseleave', resume)
-      })
-
-      function plusSlides(n){
-        clearInterval(myTimer);
-        if (n < 0){
-          showSlides(slideIndex -= 1);
-        } else {
-        showSlides(slideIndex += 1); 
-        }
-        
-        if (n === -1){
-          myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
-        } else {
-          myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
-        }
-      }
-
-      function currentSlide(n){
-        clearInterval(myTimer);
-        myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n){
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" activeDot", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " activeDot";
-      }
-
-      pause = () => {
-        clearInterval(myTimer);
-      }
-
-      resume = () =>{
-        clearInterval(myTimer);
-        myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-      }
-
-      function myFunction() {
-          var x = document.getElementById("nav");
-          if (x.style.display === "block") {
-              x.style.display = "none";
-          } else {
-              x.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
-          }
-
-          var a = document.getElementById("activate-menu");
-          var d = document.getElementById("deactivate-menu");
-          if (a.style.display === "block") {
-              a.style.display = "none";
-              d.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1565C0";
-          } else {
-              d.style.display = "none";
-              a.style.display = "block";
-              document.getElementById("nav2").style.backgroundColor = "#1ba0f2";
-          }
-      }
-    </script>
 
 <div class="footer">
   <p>© 2022 The Watoto Library</p>
