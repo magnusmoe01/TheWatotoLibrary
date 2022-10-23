@@ -491,7 +491,7 @@
   margin-left: 15px;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1221px) {
   .flex-image-text {
     flex-flow: column wrap;
     padding: 0;
@@ -743,6 +743,7 @@
   border: 1px solid rgba(128, 128, 128, 0.352);
   display: inline-block;
   transition: transform .2s;
+  cursor: pointer;
 }
 
 .newsletter-wrapping a {
@@ -795,6 +796,12 @@
 
 .div-back:hover {
   transform: scale(1.05);
+}
+
+@media(max-width: 1200px){
+  .div-readmore{
+    width: 100%;
+}
 }
 
 

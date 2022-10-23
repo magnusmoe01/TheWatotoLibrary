@@ -23,7 +23,7 @@
 <body>
 
   <nav class="navbar-2" id="nav2"  onclick="myFunction()">
-    <span class="notranslate"><a href="../index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a></span>
+    <span class="notranslate" style="user-select:none"><a class="box-1-navbar-2">THE WATOTO LIBRARY</a></span>
     <a href="javascript:void(0);" class="icon">
         <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
         <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
@@ -103,9 +103,6 @@
             <div class="slideshow-container">
               <div class="slideshow-inner">
                     <div class="mySlides fade">
-                      <img  src='../media/articles/3/IMG_8027-780x420-reduced.jpeg'/>
-                    </div>
-                    <div class="mySlides fade">
                       <img  src='../media/chess/780x420/boys-playing-chess-5-780x420-reduced.jpeg'/>
                     </div>
                     <div class="mySlides fade">
@@ -123,10 +120,14 @@
               <span class="dot" onclick='currentSlide(1)'></span>
               <span class="dot" onclick='currentSlide(2)'></span>
               <span class="dot" onclick='currentSlide(3)'></span>
-              <span class="dot" onclick='currentSlide(4)'></span>
             </div>
-
           </div>
+          <br>
+          <div class="article-click" style="cursor: default;">
+            <h3>Read More</h3>
+            <div class="newsletter-wrapping" onclick="location.href='../articles/2.html';"><a class="button">The Opening of The Watoto Library</a></div>
+            <div class="newsletter-wrapping" onclick="location.href='../articles/3.html';"><a class="button">Painting The Library</a></div> 
+          </div> 
       </div>
     </div>
     
