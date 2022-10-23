@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/x-icon" href="media/logo/favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/translate.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -21,6 +23,10 @@
 </head>
 
 <body>
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="iconify"
+    data-icon="typcn:arrow-up-thick"></span></button>
+  <script src="js/btn_top.js"></script> -->
+
   <div id="homepage">
       <div class="slideshow">
         <div class="slideshow-item">
@@ -38,7 +44,7 @@
             </div>
         </div>
         <div class="slideshow-item">
-            <img src="media/random/puzzles.jpeg">
+            <img src="media/slideshow/puzzles.jpeg">
             <div class="slideshow-item-text">
                 <h5>We empower kids</h5>
                 <p>A place where they can freely embrace who they are. Understand the value of one another. Engage them in activities that will help boost their confidence, self-esteem and improve their focus in all that they do.</p>
@@ -49,7 +55,7 @@
       <div id="/"></div>
     
       <nav class="navbar-2" id="nav2"  onclick="myFunction()">
-        <a href="index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a>
+        <span class="notranslate"><a href="index.html" class="box-1-navbar-2">THE WATOTO LIBRARY</a></span>
         <a href="javascript:void(0);" class="icon">
             <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
             <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
@@ -108,7 +114,7 @@
                   and fun.</p>
                 <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
               </div>
-              <img src="media/paintings/painting-library-1-reduced.jpeg" class="img">
+              <img src="media/articles/3-painting/painting-library-1-reduced.jpeg" class="img">
           </div>
         </div>
         <br>
@@ -151,11 +157,48 @@
       </div>
     </div>
 
-    <div class="footer">
-      <p>© 2022 The Watoto Library</p>
-    </div>
+    <footer class="footer">
+      <div class="container-footer">
+       <div class="container-row">
+         <div class="footer-col">
+           <h4><a href="index.html" style="color:white">The Watoto Library</a></h4>
+           <ul>
+             <li><a href="about.html">About TWL</a></li>
+             <li><a href="getInTouch.html">Our Team</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4><a href="whatWeDo.html" style="color:white">What We Do</a></h4>
+           <ul>
+             <li><a href="studyGroup.html">Study Group</a></li>
+             <li><a href="danceGroup.html">Dance Group</a></li>
+             <li><a href="chessClub.html">Chess Club</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Engage</h4>
+           <ul>
+             <li><a href="getInTouch.html#contact">Contact Us</a></li>
+             <li><a href="donate.html">Donate</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>follow us</h4>
+           <div class="social-links">
+             <a href="https://www.facebook.com/thewatotolibraryprojectkenya"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://www.instagram.com/thewatotolibrary/"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+           <ul>
+            <li><p>© 2022 The Watoto Library</p></li>
+           </ul>
+         </div>
+       </div>
+      </div>
+   </footer>
   
   </div>
+
   </body>
   <div class="se-pre-con"></div>
 </html>
