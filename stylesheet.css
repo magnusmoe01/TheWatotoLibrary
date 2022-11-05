@@ -127,7 +127,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  
+  font-size: 17px;
   list-style: none;
   margin: 0; 
   background-color: #1ba0f2;
@@ -766,6 +766,7 @@
   border: 1px solid rgba(128, 128, 128, 0.352);
   display: inline-block;
   transition: transform .2s;
+  user-select: none;
 }
 
 .div-readmore a {
@@ -788,6 +789,7 @@
   border: 1px solid rgba(128, 128, 128, 0.352);
   display: inline-block;
   transition: transform .2s;
+  user-select: none;
 }
 
 .div-back a {
@@ -993,5 +995,3 @@ body {
     width: 100%;
 }
 }
-
-
