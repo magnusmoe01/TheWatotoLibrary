@@ -995,3 +995,36 @@ body {
     width: 100%;
 }
 }
+
+
+/* ----- TEXT UNDER IMAGE -------*/
+
+.item{
+  min-width: 200px;
+  flex: 20%;
+  text-align:center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+
+.item img {
+  margin-top: 10px;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.item p {
+  padding: 5px;
+}
+
+#index-gallery{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
