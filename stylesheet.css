@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor: default;
   }
   
   /* Style the body */
@@ -22,6 +23,10 @@
   }
 
   a {
+    cursor: pointer;
+  }
+
+  a {
     font-family: Verdana, Tahoma, sans-serif;
     color: #443c3e;
   }
@@ -39,6 +44,10 @@
     border-left-style: hidden;
     border-bottom-style: groove;
     background-color: #eee;
+  }
+
+  input:hover {
+    cursor: pointer;
   }
 
   textarea {
@@ -149,6 +158,7 @@
 .navigation a:hover {
   background-color: #1565C0;
   transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .active {
@@ -981,6 +991,7 @@ body {
 .footer-col ul li a:hover{
   color: #1ba0f2;
   padding-left: 8px;
+  cursor: pointer;
 }
 
 .footer-col .social-links a{
