@@ -99,6 +99,10 @@
     transform: scale(1.05);
   }
 
+  .button-design.form:hover {
+    transform: scale(1.02);
+  }
+
   .title {
     color: grey;
     margin-top: -5px;
@@ -204,9 +208,19 @@
   }
 
   .img {
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .img-nozoom {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .img:hover {
+    cursor: zoom-in;
   }
 
   .side-vision {
@@ -372,6 +386,7 @@
     .side {
       flex: 45%;
     }
+
   }
   
   /* Main column */
@@ -386,6 +401,7 @@
     padding: 20px;
     margin-left: -20px;
     border-radius: 5px;
+    cursor: default;
   }  
   
   .article-click {
@@ -490,6 +506,7 @@
   max-width: 50%;
   margin-left: 15px;
 }
+
 
 @media all and (max-width: 1221px) {
   .flex-image-text {
@@ -999,7 +1016,7 @@ body {
 
 /* ----- TEXT UNDER IMAGE -------*/
 
-.item{
+.item, .item-partners {
   min-width: 200px;
   flex: 20%;
   text-align:center;
@@ -1011,10 +1028,30 @@ body {
   margin-bottom: 1px;
 }
 
+.item-partners div {
+  max-width: 100%;
+  padding: 15px;
+}
+
 .item img {
-  margin-top: 10px;
-  max-height: 200px;
   max-width: 200px;
+  max-height: 200px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+
+.item-partners div {
+  width: 100%;
+  padding: 15px;
+}
+
+.item-partners img {
+  width: 100%;
+}
+
+.item-partners p {
+  padding: 3px;
 }
 
 .item p {
@@ -1028,3 +1065,48 @@ body {
   flex-direction: row;
   justify-content: flex-start;
 }
+
+
+/* -------------------- */
+
+.img-nozoom.paypal {
+  margin-left: 20px;
+  max-width: 30%;
+}
+
+.img-nozoom.vipps {
+  height: 200px; 
+  width: 200px; 
+  display: -webkit-box; 
+  margin-left: auto;
+}
+
+.button-design.paypal {
+  padding:8px; 
+  max-width: 300px;
+}
+
+@media(max-width: 1221px){
+  .img-nozoom.paypal {
+    margin-top: 20px;
+    max-width: 40%;
+    margin-left: 0;
+  }
+
+  .img-nozoom.vipps {
+    display: -webkit-box; 
+    margin-right: auto;
+  }
+}
+
+@media(max-width: 700px){
+  .img-nozoom.paypal {
+    max-width: 60%;
+  }
+
+  .button-design.paypal {
+    max-width: 100%;
+  }
+}
+
+

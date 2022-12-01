@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/translate.js"></script>
+    <script src="js/fullscreen.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
@@ -41,7 +42,7 @@
     <div class="row">
       <div class="side" id="side">
         <div class="logo" style="cursor:pointer" onclick="location.href='index.html';">
-          <img src="media/logo/logo-transparent.png" class="img" style="width: 60%;">
+          <img src="media/logo/logo-transparent.png" class="img-nozoom" style="width: 60%;">
         </div>
         
         <div class="vision-statement">
@@ -55,7 +56,7 @@
         <br><br>
         <div class="pointer" onclick="location.href='articles/chessClub.html';">
         <div class="chess-peak">
-          <img src="media/chess/boys-playing-chess.png" class="img">
+          <img src="media/chess/boys-playing-chess.png" class="img-nozoom">
         </div>
         </div>
         <br>
@@ -82,14 +83,14 @@
           </div>
         </div>
         <br>
-        <div class="article-click" onclick="location.href='articles/kibera.html';">
+        <div class="article">
           <div class="flex-image-text">
             <div>
               <h3>Kibera and its Kids</h3>
               <p>
                 The Watoto Library is located in Kibera, in Nairobi, Kenya. Kibera is the largest urban slum in Africa. Around 2,000,000 people live here in what is defined as extreme poverty, earning less than US$2 per day. Unemployment rates are high and many people cannot afford education for their children.
               </p> 
-              <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
+              <div class="div-readmore" onclick="location.href='articles/kibera.html';"><p class="readmore">Read more &#8594;</p></div>
             </div>  
             <img src="media/about/whereWeOperate.jpeg" class="img"> 
           </div> 
@@ -111,14 +112,14 @@
           </p>
         </div>
         <br>
-        <div class="article-click" onclick="location.href='articles/brandonFrancis.html';" id="theFounder">
+        <div class="article" id="theFounder">
           <div class="flex-image-text">
             <div>
               <h3>The Founder</h3>
               <p>
                 The founder, Brandon Francis Okoth, was himself born and raised in Kibera. He joined SoulKids as a volunteer in 2008. He was then only 8 years old but already stood out as a responsible boy, taking care of all the small kids in the area, and thus becoming an important reporter from the slums to SoulKids.
               </p>
-              <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
+              <div class="div-readmore" onclick="location.href='articles/brandonFrancis.html';"><p class="readmore">Read more &#8594;</p></div>
             </div>
             <img src="media/about/BrandonAndKids.jpeg" class="img">
           </div>
@@ -151,6 +152,7 @@
            <h4><a href="donate.html" style="color:white">Engage</a></h4>
            <ul>
              <li><a href="getInTouch.html#contact">Contact Us</a></li>
+             <li><a href="getInTouch.html#partners">Our Partners</a></li>
              <li><a href="donate.html">Donate</a></li>
            </ul>
          </div>

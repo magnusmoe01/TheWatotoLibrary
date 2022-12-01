@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/translate.js"></script>
+    <script src="js/fullscreen.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
@@ -42,7 +43,7 @@
     <div class="row">
       <div class="side" id="side">
         <div class="logo" style="cursor:pointer" onclick="location.href='index.html';">
-          <img src="media/logo/logo-transparent.png" class="img" style="width: 60%;">
+          <img src="media/logo/logo-transparent.png" class="img-nozoom" style="width: 60%;">
         </div>
         
         <div class="vision-statement">
@@ -56,7 +57,7 @@
         <br><br>
         <div class="pointer" onclick="location.href='articles/chessClub.html';">
         <div class="chess-peak">
-          <img src="media/chess/boys-playing-chess.png" class="img">
+          <img src="media/chess/boys-playing-chess.png" class="img-nozoom">
         </div>
         </div>
         <br>
@@ -82,19 +83,19 @@
           <div class="newsletter-wrapping" onclick="location.href='articles/1.html';"><a class="button">July 2022 - Starting The Watoto Library</a></div>       
         </div> 
         <br>
-        <div class="article-click" onclick="location.href='articles/4.html';" id="4">
+        <div class="article" id="4">
           <div class="flex-image-text">
             <div>
               <h2>Partnering With The WWQA</h2>
               <h5>Posted on November 5, 2022</h5>
               <p>The Watoto Library has started a partnership with the World Water Quality Alliance, a sub-division of the United Nations Environment Programme. The goal of the partnership is to do cleanups around Kibera with the aim of improving the water quality of the community.</p>
-              <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
+              <div class="div-readmore" onclick="location.href='articles/4.html';"><p class="readmore">Read more &#8594;</p></div>
             </div>
             <img src="media/articles/4-wwqa/wwqaGroupPhoto.jpeg" class="img">
           </div>
         </div>
         <br>
-        <div class="article-click" onclick="location.href='articles/3.html';" id="3">
+        <div class="article" id="3">
             <div class="flex-image-text">
               <div>
                 <h2>Painting The Library</h2>
@@ -103,7 +104,7 @@
                   project. When we first moved into the place, the walls had the original cement color lacking
                   warmth to the space. After consultation with the kids we decided to make the walls more playful
                   and fun.</p>
-               <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
+               <div class="div-readmore" onclick="location.href='articles/3.html';"><p class="readmore">Read more &#8594;</p></div>
               </div>
               <img src="media/articles/3-painting/painting-library-1-reduced.jpeg" class="img">
             </div>
@@ -126,7 +127,7 @@
         </div>
         <br>
         -->
-        <div class="article-click" onclick="location.href='articles/1.html';" id="1">
+        <div class="article" id="1">
           <div class="flex-image-text">
             <div>
               <h2>How<span class="notranslate"> The Watoto Library </span>Started</h2>
@@ -134,7 +135,7 @@
               <p>As I was walking around my neighborhood, I came to a stand stop when I spotted one school moving
                 their books out of their library. They had been renting the space as their own for several years. I had
                 always wished that they would allow anyone from the community to use it.</p>
-              <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
+              <div class="div-readmore" onclick="location.href='articles/1.html';"><p class="readmore">Read more &#8594;</p></div>
             </div>
             <img src="media/articles/1-starting/outsideTheLibrary.jpeg" class="img">
           </div>
@@ -169,6 +170,7 @@
            <h4><a href="donate.html" style="color:white">Engage</a></h4>
            <ul>
              <li><a href="getInTouch.html#contact">Contact Us</a></li>
+             <li><a href="getInTouch.html#partners">Our Partners</a></li>
              <li><a href="donate.html">Donate</a></li>
            </ul>
          </div>

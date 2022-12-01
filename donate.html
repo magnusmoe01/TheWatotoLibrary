@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/translate.js"></script>
+    <script src="js/fullscreen.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
@@ -42,7 +43,7 @@
     <div class="row">
       <div class="side" id="side">
         <div class="logo" style="cursor:pointer" onclick="location.href='index.html';">
-          <img src="media/logo/logo-transparent.png" class="img" style="width: 60%;">
+          <img src="media/logo/logo-transparent.png" class="img-nozoom" style="width: 60%;">
         </div>
         
         <div class="vision-statement">
@@ -56,7 +57,7 @@
         <br><br>
         <div class="pointer" onclick="location.href='articles/chessClub.html';">
         <div class="chess-peak">
-          <img src="media/chess/boys-playing-chess.png" class="img">
+          <img src="media/chess/boys-playing-chess.png" class="img-nozoom">
         </div>
         </div>
         <br>
@@ -127,7 +128,7 @@
               <p>This solution is only available in Norway.</p>
               <i>Please make sure to mark the payment with 'The Watoto Library'.</i>
             </div>
-            <img src="media/donate/vipps-qr.png" style="height: 200px; width: 200px; display: -webkit-box; margin-left: auto;">
+            <img src="media/donate/vipps-qr.png" class="img-nozoom vipps">
           </div>
         </div>
         <br>
@@ -135,11 +136,11 @@
           <div class="flex-image-text">
             <div>
               <h3>PayPal</h3>
-              <a class="button-design" style="padding:8px; max-width: 300px;" href="https://www.paypal.com/donate/?hosted_button_id=5UQQ76MLZMV92" target="_blank">Donate through PayPal</a>
+              <a class="button-design paypal" href="https://www.paypal.com/donate/?hosted_button_id=5UQQ76MLZMV92" target="_blank">Donate through PayPal</a>
               <p>We accept both one-time donations and monthly donations through PayPal.</p>
               <i>With this solution, the donation is sent directly to The Watoto Library and not through Soul Kids.</i>
             </div>
-            <img src="media/donate/paypal-transparent.png" class="img" style="max-width: 30%;">
+            <img src="media/donate/paypal-transparent.png" class="img-nozoom paypal">
           </div>
         </div>
         <!--
@@ -241,6 +242,7 @@
            <h4><a href="donate.html" style="color:white">Engage</a></h4>
            <ul>
              <li><a href="getInTouch.html#contact">Contact Us</a></li>
+             <li><a href="getInTouch.html#partners">Our Partners</a></li>
              <li><a href="donate.html">Donate</a></li>
            </ul>
          </div>
