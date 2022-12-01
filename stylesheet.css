@@ -1121,3 +1121,25 @@ body {
 }
 
 
+/* ----------------- */
+
+
+/* Safari syntax */
+:-webkit-full-screen {
+  background-color: white;
+  padding: 30px;
+}
+
+/* IE11 */
+:-ms-fullscreen {
+  background-color: white;
+  padding: 30px;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+}
+
