@@ -13,6 +13,7 @@
     <script src="../js/slideshow.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/translate.js"></script>
+    <script src="../js/fullscreen.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
@@ -42,7 +43,7 @@
     <div class="row">
       <div class="side" id="side">
         <div class="logo" style="cursor:pointer" onclick="location.href='../index.html';">
-          <img src="../media/logo/logo-transparent.png" class="img" style="width: 60%;">
+          <img src="../media/logo/logo-transparent.png" class="img-nozoom" style="width: 60%;">
         </div>
         
         <div class="vision-statement">
@@ -56,7 +57,7 @@
         <br><br>
         <div class="pointer" onclick="location.href='../articles/chessClub.html';">
         <div class="chess-peak">
-          <img src="../media/chess/boys-playing-chess.png" class="img">
+          <img src="../media/chess/boys-playing-chess.png" class="img-nozoom">
         </div>
         </div>
         <br>
@@ -71,7 +72,9 @@
       </div>
 
       <div class="main" id="main">
-        <div class="div-back"><a href="../whatWeDo.html#studyGroup">&#8592; Back to What We Do</a></div>
+        <div onclick="location.href='../whatWeDo.html#studyGroup';">
+          <div class="div-back"><p class="allNewsLetters">&#8592; Back to What We Do</p></div>
+        </div>
         <div class="article">
           <div class="flex-image-text">
             <div>
@@ -112,10 +115,10 @@
           <div class="slideshow-container">
             <div class="slideshow-inner">
                   <div class="mySlides fade">
-                    <img  src='../media/whatWeDo/study-group/many-studying.jpeg'/>
+                    <img  src='../media/whatWeDo/study-group/many-studying.jpeg' class="img"/>
                   </div>                  
                   <div class="mySlides fade">
-                    <img  src='../media/whatWeDo/study-group/div-studying.jpeg'/>
+                    <img  src='../media/whatWeDo/study-group/div-studying.jpeg' class="img"/>
                   </div>
             </div>
             <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -157,6 +160,7 @@
            <h4><a href="../donate.html" style="color:white">Engage</a></h4>
            <ul>
              <li><a href="../getInTouch.html#contact">Contact Us</a></li>
+             <li><a href="../getInTouch.html#partners">Our Partners</a></li>
              <li><a href="../donate.html">Donate</a></li>
            </ul>
          </div>
