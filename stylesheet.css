@@ -827,8 +827,7 @@ price {
   transition: transform .2s;
   user-select: none;
   box-shadow: var(--timelineCardBoxShadow, 0 0px 2px 0 rgba(0, 0, 0, .12), 0 0px 1px 0 rgba(0, 0, 0, .24));
-  background-color: #e6f5fd;
-  border: 2px solid #1ba0f220;
+  border: 1px solid #1ba0f220;
 }
 
 .div-readmore a {
@@ -1206,6 +1205,16 @@ body {
   text-align: center;
   margin: 20px;
   width: 25%;
+}
+
+/* ------------------------ */
+
+date {
+  background-color: rgba(211, 211, 211, 0.232);
+  border: 1px solid #1ba0f220;
+  padding: 5px;
+  border-radius: 6px;
+  user-select: none;
 }
 
 
