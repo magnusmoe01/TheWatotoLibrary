@@ -35,7 +35,7 @@
     margin-top: 10px;
     font-size: 17px;
     padding: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #1ba0f220;
 
     border-top-style: hidden;
     border-right-style: hidden;
@@ -54,7 +54,7 @@
     font-size: 17px;
     padding: 5px;
     resize: none;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #1ba0f220;
 
     border-top-style: hidden;
     border-right-style: hidden;
