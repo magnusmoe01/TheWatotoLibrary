@@ -34,6 +34,10 @@
     margin-bottom: -10px;
   }
 
+  br {
+    user-select: none;
+  }
+
   input {
     text-indent: 5px;
   }
