@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="css/articles.css">
     <link rel="icon" type="image/x-icon" href="media/logo/favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -57,10 +57,14 @@
         </div>
         <div class="article-click newsletters" style="cursor: default;">
           <h2>Newsletters</h2>
-          <div class="newsletter-wrapping" onclick="location.href='articles.html#4';"><a class="button">November 2022 - Partnering with WWQA</a></div>
-          <div class="newsletter-wrapping" onclick="location.href='articles.html#3';"><a class="button">October 2022 - Painting The Library</a></div>
-          <!--<div class="newsletter-wrapping" onclick="location.href='articles/2.html';"><a class="button">August 2022 - The Opening of The Watoto Library</a></div>-->
-          <div class="newsletter-wrapping" onclick="location.href='articles.html#1';"><a class="button">July 2022 - Starting The Watoto Library</a></div>       
+          <select name="" onchange="if (this.value) window.location.href=this.value">
+            <option value="">All Newsletters</option>
+            <!--<option value="articles.html#6">February 2023 - Expanding The Library</option>-->
+            <option value="articles.html#5">January 2023 - Sharing Is Caring</option>
+            <option value="articles.html#4">November 2022 - Partnering With The WWQA</option>
+            <option value="articles.html#3">October 2022 - Painting The Library</option>
+            <option value="articles.html#1">July 2022 - How The Watoto Library Started</option>
+          </select> 
         </div> 
 
         <div class="timeline">
@@ -68,20 +72,47 @@
           <div class="timeline__group">
             <span class="timeline__year time" aria-hidden="true">2023</span>
             <div class="timeline__cards">
-              <div class="timeline__card card">
-                <header class="card__header">
-                  <time class="time" datetime="2008-08-18">
-                    <span class="time__day">28</span>
-                    <span class="time__month">Aug</span>
-                  </time>          
-                </header>
-                <div class="card__content">
-                  <p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
+              <div class="timeline__card card" id="6">
+                <div class="flex-image-text">
+                  <div>
+                    <h2>Expanding The Library <draft>DRAFT</draft></h2>
+                    <h5><date>Posted on January 17, 2022</date></h5>
+                    <p>
+                        The Watoto Library has since its very beginning been a popular place for
+                        the kids in the comminity. Recently we have seen an increased growth in kids wanting
+                        to engage in our activities, and generous Christmas donations that have come in to the library. 
+                    </p>
+                    <br>
+                    <div class="div-readmore" onclick="location.href='articles/6.html';"><p class="readmore">Read more &#8594;</p></div>
+                  </div>
+                  <img src="media/articles/6-expansion/expansion-5.jpg" class="img">
                 </div>
-              </div>
+              </div> 
+            </div>
+          </div>          
+          -->
+          <div class="timeline__group">
+            <div class="timeline__cards">
+              <div class="timeline__card card" id="5">
+                <div class="flex-image-text">
+                  <div>
+                    <h2>Sharing Is Caring</h2>
+                    <h5><date>Posted on January 10, 2023</date></h5>
+                    <p>
+                        During the month of December, The Watoto Library received generous donations.
+                        Among them many contributions to our New Year's dinner, and an individual donation of
+                        360 kilograms of ugali flour. We are very grateful for these donations that have
+                        enabled us to give many kids a nutricious meal.
+                    </p>
+                    <br>
+                    <div class="div-readmore" onclick="location.href='articles/5.html';"><p class="readmore">Read more &#8594;</p></div>
+                  </div>
+                  <img src="media/articles/5-giving-food/IMG_1027.JPG" class="img">
+                </div>
+              </div> 
             </div>
           </div>
-          -->
+
           <div class="timeline__group">
             <span class="timeline__year time" aria-hidden="true">2022</span>
             <div class="timeline__cards">
@@ -161,7 +192,7 @@
            <h4><a href="donate.html" style="color:white">Engage</a></h4>
            <ul>
              <li><a href="getInTouch.html#contact">Contact Us</a></li>
-             <li><a href="getInTouch.html#partners">Our Partners</a></li>
+             <li><a href="getInTouch.html#partners">Partners</a></li>
              <li><a href="donate.html">Donate</a></li>
            </ul>
          </div>
@@ -182,7 +213,8 @@
          </div>
        </div>
       </div>
-   </footer>
+    </footer>
+
     </body>
     <div class="se-pre-con"></div>
 </html>

@@ -87,8 +87,8 @@
             <p>It is our duty to remind them that they are <span>loved</span> and <span>seen</span> for who they are.</p>
             <p>I imagine of <span class="notranslate">The Watoto Library</span>.</p>
           </div>
-
           <br><br>
+
           <div class="pointer" onclick="location.href='articles/chessClub.html';">
             <div class="chess-peak">
               <img src="media/chess/boys-playing-chess.png" class="img-nozoom">
@@ -96,16 +96,67 @@
           </div>
           <br>
           <div class="side-vision">
-            <h3>Our Vision</h3>
+            <h3>Our Mission</h3>
             <p>The principle goal of<span class="notranslate"> The Watoto Library </span>is to have an impact on the lives of many kids living with the traumas of poverty, faced by domestic violence, denied or not provided with the space to express their thoughts and feelings.</p>
             <p>&#9733;</p>
             <p>Our library is dedicated to provide a safe and welcoming environment to kids so that they can come in and feel loved and appreciated. We are creating a society that values and respects its children. </p>
             <p>&#9733;</p>
             <p>A place where they can freely embrace who they are. Understand the value of one another. Engage them in activities that will help boost their confidence, self-esteem and improve their focus in all that they do.</p>
           </div>
+          <!--
+          <div class="newsletter-signup">
+            <h3>Sign up for our Newsletters</h3>
+            <form accept-charset="utf-8" action="https://submit-form.com/JNE0JVGT" method="post">
+              <input type="hidden" name="_redirect" value="http://thewatotolibrary.org/newsletter-success.html"/>
+              <div class="eighty-twenty" id="flex">
+                <input id="newsletter-input" type="email" placeholder="Write your E-mail" required>
+                <button id="newsletter-btn" value="Submit">Register</button>
+              </div>
+            </form>
+            <p class="newsletter">Newsletters are normally sent montly.</p>
+          </div>
+          -->
         </div>
 
       <div class="main" id="main">
+        <!--
+        <div class="article" id="6">
+          <div class="flex-image-text">
+            <div>
+              <h2>Expanding The Library <draft>DRAFT</draft></h2>
+              <h5><date>Posted on January 17, 2022</date></h5>
+              <p>
+                  The Watoto Library has since its very beginning been a popular place for
+                  the kids in the community. Recently we have seen an increased growth in kids wanting
+                  to engage in our activities, and generous Christmas donations that have come in to the library.
+                
+              </p>
+              <div class="div-readmore" onclick="location.href='articles/6.html';"><p class="readmore">Read more &#8594;</p></div>
+            </div>
+            <img src="media/articles/6-expansion/expansion-5.jpg" class="img">
+          </div>
+        </div>
+        <br>
+        -->
+        <div class="article" id="5">
+          <div class="flex-image-text">
+            <div>
+              <h2>Sharing Is Caring</h2>
+              <h5><date>Posted on January 10, 2023</date></h5>
+              <p>
+                  During the month of December, The Watoto Library received generous donations.
+                  Among them many contributions to our New Year's dinner, and an individual donation of
+                  360 kilograms of ugali flour. We are very grateful for these donations that have
+                  enabled us to give many kids a nutricious meal.
+              </p>
+              <div class="div-readmore" onclick="location.href='articles/5.html';"><p class="readmore">Read more &#8594;</p></div>
+            </div>
+            <img src="media/articles/5-giving-food/IMG_1027.JPG" class="img">
+          </div>
+        </div>
+
+        <br>
+
         <div class="article" id="4">
           <div class="flex-image-text">
             <div>
@@ -117,7 +168,9 @@
             <img src="media/articles/4-wwqa/wwqaGroupPhoto.jpeg" class="img">
           </div>
         </div>
+
         <br>
+
         <div class="article" id="3">
             <div class="flex-image-text">
               <div>
@@ -132,24 +185,9 @@
               <img src="media/articles/3-painting/painting-library-1-reduced.jpeg" class="img">
             </div>
         </div> 
+
         <br>
-        <!--
-        <div class="article-click" onclick="location.href='articles/2.html';" id="2">
-          <div class="flex-image-text">
-            <div>
-              <h2>The Opening of<span class="notranslate"> The Watoto Library </span></h2>
-              <h5>Posted on July 3, 2022</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto suscipit, quidem quam consequuntur unde iure ipsa nulla animi neque, perspiciatis, quos vel voluptates quibusdam expedita est laboriosam commodi. Cum, delectus?
-    
-              </p>
-              <div class="div-readmore"><p class="readmore">Read more &#8594;</p></div>
-            </div>
-            <img src="media/articles/2-opening/opening.jpeg" class="img">
-          </div>
-        </div>
-        <br>
-        -->
+
         <div class="article" id="1">
           <div class="flex-image-text">
             <div>
@@ -197,7 +235,7 @@
            <h4><a href="donate.html" style="color:white">Engage</a></h4>
            <ul>
              <li><a href="getInTouch.html#contact">Contact Us</a></li>
-             <li><a href="getInTouch.html#partners">Our Partners</a></li>
+             <li><a href="getInTouch.html#partners">Partners</a></li>
              <li><a href="donate.html">Donate</a></li>
            </ul>
          </div>
@@ -223,5 +261,21 @@
   </div>
 
   </body>
+  <script>
+    newsletterbtn = document.getElementById("newsletter-btn");
+    newsletterinput = document.getElementById("newsletter-input");
+
+    newsletterbtn.addEventListener("hover", regNewsletter);
+    function regNewsletter() {
+      if (newsletterinput.value =="") {
+        alert("Write an email address.") // fix background color instead
+      }
+
+      else {
+        alert("Thank you for registering for our newsletters!")
+      }
+
+    }
+  </script>
   <div class="se-pre-con"></div>
 </html>

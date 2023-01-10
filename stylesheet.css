@@ -55,6 +55,11 @@
     border-left-style: hidden;
     border-bottom-style: groove;
     background-color: #1ba0f220;
+    user-select: none;
+  }
+
+  select {
+    border-radius: 5px;
   }
 
   input:hover {
@@ -101,6 +106,10 @@
     text-decoration: none;
     color: black;
     padding: 20px;
+  }
+
+  button {
+    user-select: none;
   }
 
   .button-design {
@@ -855,6 +864,7 @@ price {
   user-select: none;
   box-shadow: var(--timelineCardBoxShadow, 0 0px 2px 0 rgba(0, 0, 0, .12), 0 0px 1px 0 rgba(0, 0, 0, .24));
   border: 1px solid #1ba0f220;
+  cursor: pointer;
 }
 
 .div-readmore a {
@@ -885,6 +895,7 @@ price {
   box-shadow: var(--timelineCardBoxShadow, 0 0px 2px 0 rgba(0, 0, 0, .12), 0 0px 1px 0 rgba(0, 0, 0, .24));
   background-color: #e6f5fd;
   border: 2px solid #1ba0f220;
+  cursor: pointer;
 }
 
 .div-back a {
@@ -899,6 +910,10 @@ price {
   .div-readmore{
     width: 100%;
 }
+}
+
+.timeline__year {
+  user-select: none;
 }
 
 
@@ -1240,9 +1255,9 @@ body {
 /* ------------------------ */
 
 date {
-  background-color: rgba(211, 211, 211, 0.125);
-  border: 1px solid #1ba0f220;
-  padding: 5px;
+  background-color: rgba(211, 211, 211, 0.2005);
+  /*border: 1px solid #1ba0f220;*/
+  padding: 10px;
   border-radius: 6px;
   user-select: none;
 }
@@ -1267,4 +1282,70 @@ iframe {
   width: 100%;
   height: 100%;
 }
+
+.newsletter-signup {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.newsletter-signup input {
+  margin: 0;
+  border: 3px solid #1ba0f220;
+  border-right: 0;
+  background-color: transparent;
+}
+
+p.newsletter {
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+.eighty-twenty {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.eighty-twenty input {
+  flex: 80%;
+}
+
+.eighty-twenty input:hover {
+  transition: transform .2s;
+  border: 3px solid #1ba0f25b;
+}
+
+.eighty-twenty button {
+  flex: 20%;
+  background-color: transparent;
+  border: 3px solid #1ba0f220;
+  font-size: 17px;
+  color: grey
+}
+
+.eighty-twenty button:hover {
+  cursor: pointer;
+  color: black;
+  transition: transform .2s;
+  border: 3px solid #1ba0f25b;
+}
+
+.eighty-twenty input:hover {
+  transform: scale(1.02);
+}  
+
+.eighty-twenty button:hover {
+  transform: scale(1.02);
+}  
+
+draft {
+  color: red;
+  font-size: 18px;
+  padding: 5px;
+  background-color: rgba(240, 128, 128, 0.334);
+  border-radius: 5px;
+  user-select: none;
+}
+
+
+
 
