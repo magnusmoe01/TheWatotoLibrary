@@ -1,0 +1,131 @@
+/* --------SPONSOR--------------- */
+
+.article.sponsor {
+    border: none;
+    box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+  }
+  
+  .sponsor {
+    border: none;
+    box-shadow: none;
+    background-color: rgb(249, 232, 235);
+  }
+  
+  .sponsor div {
+    text-align: left;
+  }
+  
+  .sponsor img {
+    border-radius: 300px;
+    padding: 10px;
+    background-color: #1ba0f220;
+    border: 3px solid #1ba0f220;
+    text-align: center;
+    width: 95%;
+    height: auto;
+  }
+  
+  .spons {
+    text-align: left;
+  }
+  
+  .pop-spons {
+    width: 700px;
+    max-width: 100%;
+    padding: 0 20px 10px;
+    top: calc(56% - 25px);;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .pop-spons {
+        padding-top: 70px; 
+        max-height: 100%;    
+        overflow-y: scroll;   
+    }  
+  }
+
+  
+  .pop-spons h2 {
+    margin: 0px 0 10px;
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-indent: 5px;
+    color: #443c3e;
+  }
+  
+  :focus {
+    outline: none;
+  }
+  
+  .width {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* (A) CONTENT BOX */
+#collapse {
+    /* (A1) BACKGROUND IMAGE */
+    background-size: cover;
+   
+    /* (A2) DIMENSIONS */
+    width: 100%;
+    height: 100%; /* FIXED SIZE REQUIRED */
+   
+    /* (A3) CSS TRANSITION */
+    transition: all 0.5s;
+  }
+  
+  /* (B) HIDE */
+  #collapse.hide {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 700px) {
+    .div-back.spons {
+        width: 100%;
+        margin-left: 0px;
+    }
+  }
+
+  summary {
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #443c3e;
+  }
+
+  .details-example summary {
+    padding-left: 10px;
+  }
+
+  summary:hover {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  details > summary {
+    padding: 4px;
+    width: 400px;
+    max-width: 100%;
+    background-color: #1ba0f220;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
+
+.details-example ul {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 2px solid #CCEAFC;
+    background-color: #1ba0f207;
+  }
+  
+  
+  
+  
+  
+  
+  
