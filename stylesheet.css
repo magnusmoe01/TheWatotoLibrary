@@ -501,6 +501,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border: 3px solid #1ba0f220;
+    user-select: none;
   }
   
   /* Fake image, just for this example */
