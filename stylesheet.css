@@ -757,8 +757,8 @@
   background: white;
   border-radius: 4px;
   position: fixed;
-  top: calc(50% - 25px);;
-  left: calc(50% - 25px);
+  top: calc(50% - 30px);;
+  left: calc(50%);
   transform: translate(-50%, -50%) scale(0.1);
   text-align: center;
   padding: 0 30px 30px;
@@ -782,7 +782,7 @@
   margin-bottom: 20px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border: 4px solid #1ba0f220;
+  border: 4px solid #CCEAFC;
 }
 
 .popup-container h2 {
@@ -1382,7 +1382,7 @@ draft {
   color: grey;
   font-size: 18px;
   padding: 8px;
-  background-color: rgba(253, 184, 212, 0.05);
+  background-color: #1ba0f201;
   border: 1px solid #1ba0f21b;
   border-radius: 5px;
   user-select: none;
@@ -1400,7 +1400,7 @@ draft {
   transition: transform .2s;
 }
 
-.coach i, .when i, .amount i {
+.coach i, .when i, .amount i, .openhrs i {
   margin-right: 5px;
 }
 
