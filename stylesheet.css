@@ -29,6 +29,16 @@
     cursor: pointer;
   }
 
+  u {
+    text-decoration:none;
+    border-bottom: 3px dotted rgba(0, 0, 0, 0.25);
+  }
+
+  u:hover {
+    cursor: pointer;
+    border-bottom: 3px dotted rgba(0, 0, 0, 0.6);
+  }
+
   .flex-container-2 h2 {
     margin-top: 27px;
     margin-right: 10px;
@@ -316,6 +326,7 @@
       position: absolute;
       opacity: 0;
       animation: cycleImages 31s infinite;
+      user-select: none;
   }
 
   .slideshow-item:nth-child(1), .slideshow-item:nth-child(1) img {
@@ -1155,6 +1166,17 @@ body {
   width: 100%;
   padding: 15px;
   justify-content: center;
+  background-color:#ffffff5f;
+}
+
+.item-partners div:hover {
+  transform: scale(1.03);
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.item-partners div img:hover {
+  cursor: pointer;
 }
 
 .item-partners div img {
@@ -1411,7 +1433,20 @@ draft {
 .openhrs {
   margin: 5px 5px 5px 0px;
   color: rgba(51, 51, 51, 0.785);
+  user-select: none;
 }
+
+/* -------------------------- */
+
+.partners {
+  margin-left: 5px; 
+  text-align: center;
+}
+
+.fa-solid.fa-arrow-up-right-from-square {
+  color: rgba(0, 0, 0, 0.25);
+}
+
 
 
 
