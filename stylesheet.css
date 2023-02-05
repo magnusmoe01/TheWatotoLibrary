@@ -85,6 +85,7 @@
     border-bottom-style: groove;
     background-color: #1ba0f220;
     user-select: none;
+    color: black;
   }
 
   select {
