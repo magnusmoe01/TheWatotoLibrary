@@ -520,7 +520,7 @@
   }  
 
   .card {
-    box-shadow: 0 0.3em 0.5em 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2em 0.25em 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border: 0.2em solid #1ba0f220;
     user-select: none;
@@ -584,7 +584,7 @@
 }
 
 
-.se-pre-con {
+/*.se-pre-con {
   position: fixed;
   left: 0;
   top: 0;
@@ -592,7 +592,7 @@
   height: 100%;
   z-index: 9999;
   background: url(media/loading-gif/loading-gif.gif) center no-repeat #e6f5fd;
-}
+}*/
 
 
 .flex-image-text {
@@ -881,7 +881,7 @@ price {
   margin-bottom: 0.3em;
   border-radius: 0.6em;
   background-color: #1ba0f213;
-  border: 0.1em solid rgba(128, 128, 128, 0.352);
+  border: 0.05em solid rgba(128, 128, 128, 0.352);
   display: inline-block;
   transition: transform .2s;
   font-size: 0.9em;
@@ -1441,6 +1441,12 @@ draft {
   margin: 0.3em 0.3em 0.3em 0;
   color: rgba(51, 51, 51, 0.785);
   user-select: none;
+}
+
+.openhrs u {
+  cursor: auto;
+  text-decoration:none;
+  border-bottom: 0.2em dotted #1ba0f263;
 }
 
 /* -------------------------- */
