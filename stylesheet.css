@@ -46,16 +46,16 @@
   }
 
   .flex-container-2 h2 {
-    margin-top: 0.9em;
-    margin-right: 0.6em;
-    margin-bottom: 0.6em;
+    margin-top: 0.7em;
+    margin-right: 0.4em;
+    margin-bottom: 0.5em;
   }
 
 
   .flex-container-2 h3 {
     margin-top: 0.9em;
-    margin-right: 0.6em;
-    margin-bottom: 0.6em;
+    margin-right: 0.3em;
+    margin-bottom: 0.5em;
   }
 
   h4 {
@@ -85,7 +85,7 @@
     border-bottom-style: groove;
     background-color: #1ba0f220;
     user-select: none;
-    color: black;
+    color: #443c3e;
   }
 
   select {
