@@ -46,15 +46,15 @@
   }
 
   .flex-container-2 h2 {
-    margin-top: 0.7em;
-    margin-right: 0.4em;
+    margin-top: 0.6em;
+    margin-right: 0.35em;
     margin-bottom: 0.5em;
   }
 
 
   .flex-container-2 h3 {
-    margin-top: 0.9em;
-    margin-right: 0.3em;
+    margin-top: 0.7em;
+    margin-right: 0.35em;
     margin-bottom: 0.5em;
   }
 
@@ -890,20 +890,24 @@ price {
 }
 
 .div-readmore {
-  padding: 0.6em;
   padding-top: 0.3em;
+  padding-left: 0.6em;
   padding-bottom: 0.3em;
-  margin-right: 0.6em;
+  padding-right: 0.6em;
+
+  margin-right: 0em;
+  margin-left: 0em;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
+
   border-radius: 0.4em;
   background-color: rgba(211, 211, 211, 0.125);
-  border: 0.1em solid rgba(128, 128, 128, 0.352);
+  border: 0.2em solid #1ba0f220;
   display: inline-block;
   transition: transform .2s;
   user-select: none;
-  box-shadow: var(--timelineCardBoxShadow, 0 0 0.1em 0 rgba(0, 0, 0, .12), 0 0 0.1em 0 rgba(0, 0, 0, .24));
-  border: 0.1em solid #1ba0f220;
+
+ 
   cursor: pointer;
 }
 
@@ -1358,12 +1362,12 @@ draft {
 .when, .coach, .amount {
   margin: 0.4em 0.25em 0.25em 0;
   color: grey;
-  padding: 0.5em;
+  padding: 0.45em;
   background-color: #1ba0f201;
   border: 0.1em solid #1ba0f21b;
   border-radius: 0.3em;
   user-select: none;
-  font-size: 0.9em;
+  font-size: 0.85em;
   text-align: left;
   justify-content: center;
 }
