@@ -87,7 +87,7 @@ DEPENDENCES
   
   .card{
     border-radius: var(--timelineCardBorderRadius, 2px);
-    border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+    border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, #1ba0f23d);
     box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
     background-color: var(--timelineCardBackgroundColor, #fff);
   }
