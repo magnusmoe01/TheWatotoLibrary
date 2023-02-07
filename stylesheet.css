@@ -959,62 +959,6 @@ price {
 
 /* ------------------- */
 
-#google_translate_element{
-  height: 3.4em;
-  text-decoration: none;
-  display: block;
-  padding-left: 0.6em;
-  padding-right: 0.6em;
-  text-align: center;
-  user-select: none;
-}
-
-#google_translate_element select{
-  background:#1ba0f2;
-  color:white;
-  border: 0.1em solid white;
-  border-radius: 0.4em;
-  height: 1.9em;
-  padding: auto;
-  text-align: center;
-  margin-top: 0.8em;
-  user-select: none;
-}
-
-#google_translate_element select:hover{
-  background-color: #1565C0;
-  transition: background-color 0.2s ease;
-}
-  
-/*google translate link | logo */
-.goog-logo-link{
-  display:none!important;
-  }
-.goog-te-gadget{
-  color:transparent!important;
-}
-  
-/* google translate banner-frame */
-
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-  } 
-
-body {
-  top: 0 !important; 
-  }
-
-#goog-gt-tt, .goog-te-balloon-frame{
-  display: none !important;
-}
-
-.goog-text-highlight{ 
-  background: none !important; 
-  box-shadow: none !important;}
-
-
-/* ------------------- */
-
   #myBtn {
     display: none;
     position: fixed;
