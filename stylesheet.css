@@ -1412,9 +1412,8 @@ draft {
 
 
 .when, .coach, .amount {
-  margin: 0.5em 0.3em 0.3em 0;
+  margin: 0.4em 0.25em 0.25em 0;
   color: grey;
-  font-size: 1.1em;
   padding: 0.5em;
   background-color: #1ba0f201;
   border: 0.1em solid #1ba0f21b;
