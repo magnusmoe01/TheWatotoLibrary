@@ -902,7 +902,7 @@ price {
 
   border-radius: 0.4em;
   background-color: rgba(211, 211, 211, 0.125);
-  border: 0.2em solid #1ba0f220;
+  border: 0.17em solid #1ba0f220;
   display: inline-block;
   transition: transform .2s;
   user-select: none;
@@ -931,14 +931,13 @@ price {
   margin-top: 0;
   margin-bottom: 0.6em;
   border-radius: 0.4em;
+
   background-color: rgba(211, 211, 211, 0.125);
-  border: 0.1em solid rgba(128, 128, 128, 0.352);
   display: inline-block;
   transition: transform .2s;
   user-select: none;
-  box-shadow: var(--timelineCardBoxShadow, 0 0 0.1em 0 rgba(0, 0, 0, .12), 0 0 0.1em 0 rgba(0, 0, 0, .24));
+  border: 0.2em solid #1ba0f220;
   background-color: #e6f5fd;
-  border: 0.1em solid #1ba0f220;
   cursor: pointer;
 }
 
