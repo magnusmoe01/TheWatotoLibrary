@@ -608,7 +608,7 @@
 }
 
 
-@media all and (max-width: 1221px) {
+@media all and (max-width: 799px) {
   .flex-image-text {
     flex-flow: column wrap;
     padding: 0;
@@ -963,7 +963,7 @@ price {
   transform: scale(1.05);
 }
 
-@media(max-width: 1200px){
+@media(max-width: 799px){
   .div-readmore{
     width: 100%;
 }
