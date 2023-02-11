@@ -459,7 +459,7 @@
     }
   }  
 
-  @media screen and (max-width: 1220px) {
+  @media screen and (max-width: 799px) {
     .column {
       width: 100%;
       display: block;
@@ -1007,7 +1007,7 @@ price {
 
 .footer{
   background-color: rgba(0, 0, 0, 0.833);
-  padding-top: 1.3em;
+  padding-top: 1.2em;
   padding-bottom: 2.5em;
   user-select: none;
 }
@@ -1018,7 +1018,7 @@ price {
 }
 
 .footer-col h4{
-  font-size: 1.1em;
+  font-size: 1em;
   color: #ffffff;
   text-transform: capitalize;
   margin-bottom: 2.2em;
@@ -1050,6 +1050,7 @@ price {
   color: #bbbbbb;
   display: block;
   transition: all 0.3s ease;
+
 }
 
 .footer-col ul li p {
@@ -1388,12 +1389,6 @@ draft {
   margin: 0.3em 0.3em 0.3em 0;
   color: rgba(51, 51, 51, 0.785);
   user-select: none;
-}
-
-.openhrs u {
-  cursor: auto;
-  text-decoration:none;
-  border-bottom: 0.2em dotted #1ba0f247;
 }
 
 /* -------------------------- */
