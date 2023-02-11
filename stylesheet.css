@@ -596,7 +596,7 @@
 }*/
 
 
-.flex-image-text {
+.flex-image-text, .flex-image-text-2 {
   display: flex;
   align-items: center;
 }
@@ -615,6 +615,20 @@
   }
 
   .flex-image-text img {
+    max-height:none;
+    max-width: 100%;
+    margin: 0;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+  .flex-image-text-2 {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .flex-image-text-2 img {
     max-height:none;
     max-width: 100%;
     margin: 0;
@@ -1172,7 +1186,7 @@ price {
   border: 0.1em solid rgba(128, 128, 128, 0.352);
 }
 
-@media(max-width: 1221px){
+@media(max-width: 800px){
   .img-nozoom.paypal {
     margin-top: 1.3em;
     max-width: 40%;
