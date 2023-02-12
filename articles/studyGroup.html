@@ -22,6 +22,7 @@
     <script src="../js/slideshow.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/fullscreen.js"></script>
+    <script src="../js/fullscreen-slideshow.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
@@ -114,43 +115,19 @@
             </div>
             <img src="../media/whatWeDo/study-group/IMG_1419.jpeg" class="img">
           </div>
-          <!--
-          <div class="flex-image-text">
-            <div>
-              <h3>Computer Classes</h3>
-              <p>The Watoto Library was donated several computers by Skullerud middle school in Oslo, Norway. 
-                With them we are able to offer free computer classes for the kids to learn about how to navigate a computer and the Internet. 
-                Few have computers at home, and to be able to engage with the rest of the world in the 21st century, the knowledge of how to operate computers is essential. 
-                The kids are very grateful for and make sure to utalize this opportunity.</p>
-            </div>
-          </div>
-          -->
-          <br>
-          <br>
-          <div class="slideshow-container">
-            <div class="slideshow-inner">
-                  <div class="mySlides fade">
-                    <img  src='../media/whatWeDo/study-group/IMG_1403.jpeg' class="img"/>
-                  </div>                  
-                  <div class="mySlides fade">
-                    <img  src='../media/whatWeDo/study-group/IMG_1404.jpeg' class="img"/>
-                  </div>  
-                  <div class="mySlides fade">
-                    <img  src='../media/whatWeDo/study-group/IMG_1412.jpeg' class="img"/>
-                  </div>                    
-                  <div class="mySlides fade">
-                    <img  src='../media/whatWeDo/study-group/IMG_1435.jpeg' class="img"/>
-                  </div>                    
-                  <div class="mySlides fade">
-                    <img  src='../media/whatWeDo/study-group/IMG_1431.jpeg' class="img"/>
-                  </div>                                              
-            </div>
-            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
-          </div>
-          
-          <br/>
 
+          <br>
+          <div class="slideshow-content slideshow-display-container">
+            <img class="mySlides" src="../media/whatWeDo/study-group/IMG_1403.jpeg">
+            <img class="mySlides" src="../media/whatWeDo/study-group/IMG_1404.jpeg">
+            <img class="mySlides" src="../media/whatWeDo/study-group/IMG_1412.jpeg">
+            <img class="mySlides" src="../media/whatWeDo/study-group/IMG_1435.jpeg">
+            <img class="mySlides" src="../media/whatWeDo/study-group/IMG_1431.jpeg">
+
+          
+            <button class="slideshow-button slideshow-btn-color slideshow-button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="slideshow-button slideshow-btn-color slideshow-button-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
           <div style='text-align: center;'>
             <span class="dot" onclick='currentSlide(1)'></span>
             <span class="dot" onclick='currentSlide(2)'></span>
@@ -158,6 +135,9 @@
             <span class="dot" onclick='currentSlide(4)'></span>
             <span class="dot" onclick='currentSlide(5)'></span>
           </div>
+
+
+          
         </div>
       </div>
     </div>

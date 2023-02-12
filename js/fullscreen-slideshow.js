@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // (A) GET ALL IMAGES
-  let all = document.getElementsByClassName("img");
+  let all = document.getElementsByClassName("mySlides");
  
   // (B) CLICK TO GO FULLSCREEN
   if (all.length>0) { for (let i of all) {

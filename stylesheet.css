@@ -286,7 +286,7 @@
     user-select: none;
   }
 
-  .img {
+  .img, .mySlides {
     width: 100%;
     height: 100%;
     border-radius: 0.3em;
@@ -301,7 +301,7 @@
     user-select: none;
   }
 
-  .img:hover {
+  .img:hover, .mySlides:hover {
     cursor: zoom-in;
   }
 
@@ -560,7 +560,7 @@
   }
   
   .container {
-    padding: 0 1em;
+    padding: 0 0.8em;
   }
 
   .container h2 {
@@ -643,7 +643,7 @@
 
 
 /* -----------------SLIDESHOW------------------ */
-
+/*
 .slideshow-container {
   width: 85%;
   position: relative;
@@ -679,8 +679,8 @@
   font-weight: bold;
   font-size: 1.9em;
   transition: .6s ease;
-  border-radius: 0 0.2em 0.2em 0;
-  user-select: none;
+  border-radius: 0 0.2;
+
 }
 
 .next {
@@ -734,6 +734,79 @@
     max-height: inherit;
   }
   
+}
+
+*/
+
+.slideshow-content {
+  margin-left:auto;
+  margin-right:auto;
+  max-width:800px;
+}
+
+.slideshow-display-container {
+  position:relative;
+}
+  
+.slideshow-button-left {
+  position:absolute;
+  top:50%;
+  left: 0.2em;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(-0%,-50%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.slideshow-button-right{
+  position:absolute;
+  top:50%;
+  right: 0.2em;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(0%,-50%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slideshow-btn-color {
+  color:#fff!important;
+  background-color:#00000042!important;
+}
+
+.slideshow-btn-color:hover {
+  color:#1ba0f2!important;
+  transition: color 0.2s ease;
+}
+
+.slideshow-button {
+  border:none;
+  display:inline-block;
+  padding:0.5em 1em;
+  padding:0.5vw 1vw;
+  font-size: 1.5em;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.dot {
+  cursor: pointer;
+  height: 0.9em;
+  width: 0.9em;
+  margin: 0.5em 0.1em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease
+}
+
+.activeDot, .dot:hover {
+  background-color: #717171;
 }
 
 
@@ -1412,6 +1485,10 @@ draft {
 .fa-solid.fa-arrow-up-right-from-square {
   color: rgba(0, 0, 0, 0.25);
 }
+
+
+
+/* ----------------------------- */
 
 
 

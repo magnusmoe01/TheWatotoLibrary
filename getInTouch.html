@@ -258,9 +258,9 @@
         <div class="article" id="contact">
           <h2>Contact Us</h2>
           <form accept-charset="utf-8">
-            <input type="hidden" name="_redirect" action="https://submit-form.com/JNE0JVGT" method="post" value="http://thewatotolibrary.org/thanks.html"/>
+            <input type="hidden" name="_redirect" formaction="https://submit-form.com/JNE0JVGT" method="post" value="http://thewatotolibrary.org/thanks.html"/>
             <p>
-              <label for="full-name">Name</span></label><br>
+              <label for="full-name">Name</label><br>
               <input type="text" name="name" id="full-name">
             </p>
             <p>
@@ -271,21 +271,9 @@
               <label for="message">Message<span style="color: red;">*</span></label><br>
               <textarea rows="5" name="message" id="message" required></textarea>
             </p>
-            <!--
-            <p>
-              <label for="message">Robot Detection<span style="color: red;">*</span></label><br>
-              <select name="question" id="question">
-                <option value="0">What is one plus two?</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </p>
-            -->
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            <input onclick="checkBot()" type="submit" class="button-design form" value="Submit" id="submit">
+       
+            <input type="hidden" name="_subject" id="email-subject">
+            <input type="submit" class="button-design form" value="Submit" id="submit">
           </form>
           <br>
           

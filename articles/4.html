@@ -22,6 +22,7 @@
     <script src="../js/slideshow.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/fullscreen.js"></script>
+    <script src="../js/fullscreen-slideshow.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type='text/javascript'>
       $(window).load(function () {
@@ -129,57 +130,23 @@
             
             <br>
             <br>
-            <div class="slideshow-container">
-              <div class="slideshow-inner">
-                    <div class="mySlides fade">
-                      <img  src='../media/articles/4-wwqa/kibera-2.jpeg' class="img"/>
-                    </div>
-                    <div class="mySlides fade">
-                      <img  src='../media/articles/4-wwqa/kibera-3.jpeg' class="img"/>
-                    </div>                    
-                    <div class="mySlides fade">
-                      <img  src='../media/articles/4-wwqa/kibera-4.jpeg' class="img"/>
-                    </div>                    
-                    <div class="mySlides fade">
-                      <img  src='../media/articles/4-wwqa/kibera-5.jpeg' class="img"/>
-                    </div>
-              </div>
-              <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-              <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+            <div class="slideshow-content slideshow-display-container">
+              <img class="mySlides" src="../media/articles/4-wwqa/kibera-2.jpeg">
+              <img class="mySlides" src="../media/articles/4-wwqa/kibera-3.jpeg">
+              <img class="mySlides" src="../media/articles/4-wwqa/kibera-4.jpeg">
+              <img class="mySlides" src="../media/articles/4-wwqa/kibera-5.jpeg">
+            
+              <button class="slideshow-button slideshow-btn-color slideshow-button-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="slideshow-button slideshow-btn-color slideshow-button-right" onclick="plusDivs(1)">&#10095;</button>
             </div>
-            <br/>
             <div style='text-align: center;'>
               <span class="dot" onclick='currentSlide(1)'></span>
               <span class="dot" onclick='currentSlide(2)'></span>
               <span class="dot" onclick='currentSlide(3)'></span>
               <span class="dot" onclick='currentSlide(4)'></span>
+              <span class="dot" onclick='currentSlide(5)'></span>
             </div>
-            <br>
-            <br>
-            <!--
-            <div class="slideshow-container">
-              <div class="slideshow-inner">
-                    <div class="mySlides fade">
-                      <img  src='../media/chess/780x420/boys-playing-chess-5-780x420-reduced.jpeg' class="img"/>
-                    </div>
-                    <div class="mySlides fade">
-                      <img  src='../media/chess/780x420/kids-playing-chess-1-780x420-reduced.jpeg' class="img"/>
-                    </div>
-                    <div class="mySlides fade">
-                      <img  src='../media/chess/780x420/kids-playing-chess-2-780x420-reduced.jpeg' class="img"/>
-                    </div>
-              </div>
-              <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-              <a class="next" onclick='plusSlides(1)'>&#10095;</a>
-            </div>
-            <br/>
-            <div style='text-align: center;'>
-              <span class="dot" onclick='currentSlide(1)'></span>
-              <span class="dot" onclick='currentSlide(2)'></span>
-              <span class="dot" onclick='currentSlide(3)'></span>
-            </div>
-              -->
-
+         
           </div>
           <br>
           <div class="article-click" style="cursor: default;">
