@@ -792,6 +792,7 @@
   text-align:center;
   cursor:pointer;
   white-space:nowrap;
+  touch-action: manipulation;
 }
 
 .dot {
