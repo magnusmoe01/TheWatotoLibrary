@@ -979,14 +979,19 @@ price {
   margin-bottom: 0.3em;
 
   border-radius: 0.4em;
-  background-color: rgba(211, 211, 211, 0.125);
+  /*background-color: rgba(211, 211, 211, 0.125);*/
   border: 0.17em solid #1ba0f220;
   display: inline-block;
   transition: transform .2s;
   user-select: none;
-
- 
   cursor: pointer;
+
+  border: 0.05em solid #1ba0f220;
+  border-bottom: 0.18em solid #1ba0f220;
+  border-bottom-style: groove;
+  background-color: rgba(211, 211, 211, 0.150);
+  user-select: none;
+  color: #443c3e;
 }
 
 .div-readmore a {
