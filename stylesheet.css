@@ -1511,7 +1511,7 @@ draft {
 /* -------- NEWSLETTER FORM ---------- */
 
 
-.newsletterForm input, button {
+/* .newsletterForm input, button {
   max-width: 16em;
 
   width: 100%;
@@ -1544,7 +1544,7 @@ draft {
   .newsletterForm input, .newsletterForm button {
     max-width: 100%;
   }
-} 
+}  */
 
 
 
