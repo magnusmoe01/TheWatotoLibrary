@@ -45,6 +45,14 @@
     border-bottom: 0.2em dotted rgba(0, 0, 0, 0.6);
   }
 
+  .fa-solid:hover, .fa-regular:hover {
+    cursor: pointer;
+  }
+
+  .fa-calendar:hover {
+    cursor: default;
+  }
+
   .flex-container-2 h2 {
     margin-top: 0.6em;
     margin-right: 0.35em;
