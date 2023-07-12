@@ -1511,13 +1511,13 @@ draft {
 /* -------- NEWSLETTER FORM ---------- */
 
 
-/* .newsletterForm input, button {
+.newsletterForm input, .newsletterForm button {
   max-width: 16em;
 
   width: 100%;
   height: 2em;
   margin-top: 0.6em;
-  font-size: 1em;
+  font-size: 0.95em;
   padding: 0.3em;
   border-bottom: 0.2em solid #1ba0f220;
 
@@ -1544,7 +1544,7 @@ draft {
   .newsletterForm input, .newsletterForm button {
     max-width: 100%;
   }
-}  */
+} 
 
 
 
