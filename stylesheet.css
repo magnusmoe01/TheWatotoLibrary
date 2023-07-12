@@ -193,7 +193,7 @@
     cursor: pointer;
   }
 
-  .newsletterForm input, button {
+  /* .newsletterForm input, button {
     max-width: 16em;
 
     width: 100%;
@@ -220,7 +220,7 @@
     .newsletterForm input, .newsletterForm button {
       max-width: 100%;
     }
-  }
+  } */
 
 
 
