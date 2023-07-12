@@ -1532,6 +1532,12 @@ draft {
 .newsletterForm button {
   margin-top: 0.6em;
   max-width: 8em;
+  font-weight: normal;
+}
+
+.newsletterForm input::placeholder {
+  color: #443c3e;
+  font-size: 0.95em;
 }
 
 @media screen and (max-width: 764px) {
