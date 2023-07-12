@@ -71,10 +71,10 @@
           <br />
           <h2>Thank you for signing up!</h2>
           <p>You will receive newsletters approximately once each month.</p>
-          <p>You can opt out at any time.</p>
+          <p>You can opt out at any time by emailing us.</p>
           <br />
           <p>
-            You will be directed back in <b><span id="secondsleft">17</span></b>
+            You will be directed back in <b><span id="secondsleft">10</span></b>
           </p>
           <br />
           <br />
@@ -82,7 +82,7 @@
             <a
               class="button-design"
               style="width: 200px"
-              href="http://thewatotolibrary.org/getInTouch.html#contact"
+              href="http://thewatotolibrary.org/articles.html"
               >Go back</a
             >
           </p>
@@ -160,16 +160,14 @@
     </footer>
 
     <script>
-      var timeleft = 16;
+      var timeleft = 9;
       var secondsLeft = document.getElementById("secondsleft");
       var timer = setInterval(function () {
         if (timeleft <= 0) {
           // what happens when time is 0
 
           secondsLeft.innerHTML = 0;
-          location.replace(
-            "http://thewatotolibrary.org/getInTouch.html#contact"
-          );
+          location.replace("http://thewatotolibrary.org/articles.html");
           clearInterval(timer);
         } else {
           // what happens when time is not 0
