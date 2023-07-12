@@ -193,6 +193,36 @@
     cursor: pointer;
   }
 
+  .newsletterForm input, button {
+    max-width: 16em;
+
+    width: 100%;
+    height: 2em;
+    margin-top: 0.6em;
+    font-size: 1em;
+    padding: 0.3em;
+    border-bottom: 0.2em solid #1ba0f220;
+
+    border-bottom-style: groove;
+    background-color: #1ba0f220;
+    user-select: none;
+    color: #443c3e;
+
+    border-radius: 0.2em;
+  }
+
+  .newsletterForm button {
+    margin-top: 0.6em;
+    max-width: 8em;
+  }
+
+  @media screen and (max-width: 764px) {
+    .newsletterForm input, .newsletterForm button {
+      max-width: 100%;
+    }
+  }
+
+
 
 /* ------------------------------------------- */
 
