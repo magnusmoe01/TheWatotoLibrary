@@ -1533,6 +1533,7 @@ draft {
   margin-top: 0.6em;
   max-width: 8em;
   font-weight: normal;
+  background-color: rgba(211, 211, 211, 0.150);
 }
 
 .newsletterForm input::placeholder {
