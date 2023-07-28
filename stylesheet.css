@@ -1194,6 +1194,10 @@ price {
 }
 }
 
+.orgnr {
+  font-size: 0.95vw;
+}
+
 
 /* ----- TEXT UNDER IMAGE -------*/
 
@@ -1506,12 +1510,7 @@ draft {
 /* ----------------------------- */
 
 
-.termsofsale h1 {
-  font-size: 2vw;
-}
-
-.termsofsale h2 {
-  font-size: 1.5vw;
+.termsofsale h3 {
   margin-top: 4rem;
 }
 
