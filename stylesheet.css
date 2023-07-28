@@ -1514,6 +1514,11 @@ draft {
   margin-top: 4rem;
 }
 
+.termsofsale h3 u:hover {
+  cursor: default;
+  border-bottom: 0.2em dotted rgba(0, 0, 0, 0.25);
+}
+
 
 /* -------- NEWSLETTER FORM ---------- */
 
