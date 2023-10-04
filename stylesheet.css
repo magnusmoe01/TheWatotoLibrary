@@ -10,6 +10,8 @@
     font-size: 1.1em;
     background-color: #1ba0f220;
     color: #443c3e;
+    /* max-width: 1400px;
+    margin: auto; */
   }
 
   @media screen and (min-width: 800px) {
