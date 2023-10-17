@@ -1306,6 +1306,11 @@ price {
   border: 0.1em solid rgba(128, 128, 128, 0.352);
 }
 
+#donorbox {
+  background-color: #056BBE;
+  border: 0.1em solid #1BA0F2;
+}
+
 @media all and (max-width: 500px) {
   #vippsMobile {
     display: block;
